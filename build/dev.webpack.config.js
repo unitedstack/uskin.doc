@@ -33,7 +33,7 @@ let webpackConfig = {
 
   output: {
     path: path.resolve(__dirname, '../static'),
-    filename: '[hash:6].[name].min.js',
+    filename: '[name].min.js',
     publicPath: '/static/'
   },
 
@@ -78,7 +78,7 @@ let webpackConfig = {
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[hash:6].[name].min.css',
+      filename: '[name].min.css',
       chunkFilename: '[id].css'
     }),
     new WriteFilePlugin()
