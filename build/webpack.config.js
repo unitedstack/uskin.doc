@@ -8,6 +8,7 @@ const autoprefixer = require('autoprefixer');
 const os = require('os');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const lessToJs = require('less-var-parse');
 
 let entry = {};
@@ -107,6 +108,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[hash:6].[name].min.css',
       chunkFilename: '[id].css'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Custom template',
+      template: path.resolve(__dirname, '../public/index.html')
     })
   ],
 

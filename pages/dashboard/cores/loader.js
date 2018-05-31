@@ -1,4 +1,4 @@
-const configs = require('../config.json');
+const configs = require('../menu.json');
 
 let modules = {};
 
