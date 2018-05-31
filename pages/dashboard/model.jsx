@@ -21,7 +21,6 @@ class Model extends React.Component {
           <Route children={({ location }) => (
             <div className="garen-com-menu">
               <SideMenu
-                __={__}
                 collapsed={this.state.collapsed}
                 location={location}
                 items={menus}/>
@@ -29,7 +28,7 @@ class Model extends React.Component {
           )}/>
           <div id="main-wrapper" className="main-wrapper">
             <div id="navbar">
-              <Navbar __={__} collapsed={this.state.collapsed} onClick={this.toggleMenu.bind(this)} />
+              <Navbar collapsed={this.state.collapsed} onClick={this.toggleMenu.bind(this)} />
             </div>
             <div id="main">
               <Switch>

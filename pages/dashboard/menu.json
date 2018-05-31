@@ -1,7 +1,7 @@
 {
   "modules": [{
     "items": [
-      "overview"
+      "input"
     ]
   }, {
     "title": "basic",
@@ -9,5 +9,5 @@
       "input"
     ]
   }],
-  "default_module": "overview"
+  "default_module": "input"
 }

@@ -18,7 +18,7 @@ entrys
     return fs.statSync(path.join('../pages', m)).isDirectory();
   })
   .forEach(function(m) {
-    entry[m] = ['babel-polyfill', '../pages/' + m + '/index.jsx'];
+    entry[m] = ['../pages/' + m + '/index.jsx'];
   });
 
 let themer = lessToJs(fs.readFileSync(path.join(__dirname, '../theme/index.less'), 'utf8'));
@@ -76,6 +76,22 @@ let webpackConfig = {
     }]
   },
 
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/]/,
+          name:"dll",
+          minChunks: 1,
+          maxInitialRequests: 5,
+          minSize: 0,
+          priority:100
+        }
+      }
+    }
+  },
+
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].min.css',
@@ -118,7 +134,7 @@ let webpackConfig = {
 };
 
 const pluginHtmls = entrys.map(id => new HtmlWebpackPlugin({
-  chunks: ["common", id],
+  chunks: ['dll', id],
   filename: (id === 'home' ? 'index' : id) + ".html",
   inject: true,
   template: path.resolve(__dirname, '../public/index.html')

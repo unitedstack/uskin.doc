@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import Model from './model';
 
-ReactDOM.render(<Model />, document.getElementById('container'));
+ReactDOM.render(<Model />, document.getElementById('app'));

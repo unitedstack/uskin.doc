@@ -9,8 +9,12 @@ const os = require('os');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const lessToJs = require('less-var-parse');
 const entrys = require('./entry');
+
+// show webpack bundle analyze
+const showMeMore = process.env.npm_config_showmemore;
 
 let entry = {};
 
@@ -19,7 +23,9 @@ entrys
     return fs.statSync(path.join('../pages', m)).isDirectory();
   })
   .forEach(function(m) {
-    entry[m] = ['babel-polyfill', '../pages/' + m + '/index.jsx'];
+    // babel-polyfill占地面积太大啦！
+    // TODO: 手写polyfill
+    entry[m] = [/*'babel-polyfill', */'../pages/' + m + '/index.jsx'];
   });
 
 let themer = lessToJs(fs.readFileSync(path.join(__dirname, '../theme/index.less'), 'utf8'));
@@ -99,7 +105,20 @@ let webpackConfig = {
       new UglifyJSPlugin({
         parallel: os.cpus().length
       })
-    ]
+    ],
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/]/,
+          name:"dll",
+          minChunks: 1,
+          maxInitialRequests: 5,
+          minSize: 0,
+          priority:100
+        }
+      }
+    }
   },
 
   plugins: [
@@ -124,12 +143,16 @@ let webpackConfig = {
 };
 
 const pluginHtmls = entrys.map(id => new HtmlWebpackPlugin({
-  chunks: ["common", id],
+  chunks: ['dll', id],
   filename: (id === 'home' ? 'index' : id) + ".html",
   inject: true,
   template: path.resolve(__dirname, '../public/index.html')
 }));
 
 webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
+
+if(showMeMore) {
+  webpackConfig.plugins.push(new BundleAnalyzerPlugin());
+}
 
 module.exports = webpackConfig;

@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Model __={__} />
+    <Model />
   </BrowserRouter>,
-  document.getElementById('container')
+  document.getElementById('app')
 );

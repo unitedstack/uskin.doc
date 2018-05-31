@@ -1,13 +1,9 @@
 import {ModalV2} from 'ufec';
 import config from './config';
-import __ from 'client/locale/dashboard.lang.json';
-import request from '../../request';
-import getErrorMessage from '../../../../applications/dashboard/utils/error_message';
 
 function pop(obj, callback) {
 
   let props = {
-    __: __,
     config: config,
     onConfirm: function(values, cb, closeImmediately) {
       request.modifyPassword({

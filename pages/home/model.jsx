@@ -7,9 +7,7 @@ class Model extends Component{
 
   render(){
     return (
-      <div>
-        fdsafdsfdsafdsafdsf
-      </div>
+      <h1>This is Home Page!</h1>
     );
   }
 }
