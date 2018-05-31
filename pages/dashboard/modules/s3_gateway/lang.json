@@ -1,0 +1,14 @@
+{
+  "en": {
+    "description": "Description",
+    "gateway_port": "Gateway and Port",
+    "s3_gateway": "S3 Gateway",
+    "s3_info": ""
+  },
+  "zh-CN": {
+    "description": "详情",
+    "gateway_port": "网关地址及端口",
+    "s3_gateway": "S3网关",
+    "s3_info": "S3网关是关于。。。。的。。。"
+  }
+}

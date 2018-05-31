@@ -1,0 +1,66 @@
+{
+  "tabs": [{
+    "name": ["osd_list"],
+    "key": "osd_mgmt"
+  }, {
+    "name": ["osd_monitoring"],
+    "key": "osd_monitoring",
+    "default": true
+  }],
+  "btns": [{
+    "value": ["refresh"],
+    "key": "refresh",
+    "type": "primary",
+    "icon": "refresh"
+  }],
+  "operations": [{
+    "key": "pool",
+    "type": "select",
+    "width": 120,
+    "data": [{
+      "value": "all",
+      "name": "all_pool"
+    }]
+  }],
+  "table": {
+    "rowKey": "id",
+    "loading": true,
+    "limit": 10,
+    "pagination": {
+      "showSizeChanger": true,
+      "pageSizeOptions": ["5", "10", "20"]
+    },
+    "showSizeChanger": true,
+    "pageSizeOptions": ["5", "10", "20"],
+    "columns": [{
+      "title": ["name"],
+      "dataIndex": "name",
+      "key": "name"
+    }, {
+      "title": ["read_iops"],
+      "key": "read_iops",
+      "dataIndex": "read_iops"
+    }, {
+      "title": ["write_iops"],
+      "key": "write_iops",
+      "dataIndex": "write_iops"
+    }, {
+      "title": ["read_bandwidth"],
+      "key": "read_bandwidth",
+      "dataIndex": "read_bandwidth"
+    }, {
+      "title": ["write_bandwidth"],
+      "key": "write_bandwidth",
+      "dataIndex": "write_bandwidth"
+    }, {
+      "title": ["read_io_wait_time"],
+      "key": "read_io_wait_time",
+      "dataIndex": "read_io_wait_time"
+    }, {
+      "title": ["write_io_wait_time"],
+      "key": "write_io_wait_time",
+      "dataIndex": "write_io_wait_time"
+    }],
+    "data": []
+  }
+}

@@ -1,0 +1,38 @@
+@detail_bg_color: #EDEDED;
+@detail_font_color: #6C777A;
+
+.garen-module-gateway {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  .detail-content {
+    .description {
+      .description-base {
+        height: 64px;
+        background-color: @detail_bg_color;
+        display: flex;
+        flex: 1;
+        font-size: 12px;
+        .description-base-name, .description-base-status, .description-base-port{
+          width: 312px;
+          padding-left: 20px;
+          padding-top: 14px;
+          box-sizing: border-box;
+          > p:first-child {
+            margin: 0;
+            margin-bottom: 4px;
+          }
+          > p:last-child {
+            margin: 0;
+            color: @detail_font_color;
+          }
+        }
+        .description-base-status {
+          > p:last-child {
+            color: @primary-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@enabled_color: #01AFC9;
+@disabled_color: #A3A7AD;
+.garen-module-data-policy {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  .switch {
+    width: fit-content;
+    border-radius: 100px;
+    padding: 2px 10px;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+    &.disabled {
+      background: rgba(163,167,173,0.20);
+      color: @disabled_color;
+    }
+    &.enabled {
+      background: rgba(1,175,201,0.20);
+      color: @enabled_color;
+    }
+  }
+  .default {
+    width: fit-content;
+    display: inline-block;
+    border-radius: 100px;
+    padding: 2px 10px;
+    margin-left: 2px;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+    background: rgba(1,175,201,0.20);
+    color: @enabled_color;
+  }
+}

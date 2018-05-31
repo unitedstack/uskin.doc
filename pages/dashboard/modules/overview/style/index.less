@@ -1,0 +1,694 @@
+.garen-module-overview {
+  padding: 12px;
+  width: 100%;
+  background: #f6f6f6;
+  overflow-x: hidden;
+  overflow: scroll;
+  color: #393C40;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  > .top {
+    width: 100%;
+    height: 86px;
+    margin-bottom: 12px;
+    .io-detail-card-content-wrapper ul {
+      width: 100%;
+      height: 86px;
+      display: flex;
+      justify-content: space-between;
+      background: white;
+    }
+    li {
+      width: 16%;
+      margin-top: 20px;
+      height: 46px;
+      border-right: 1px solid #ededed;
+      display: flex;
+      justify-content: center;
+      &:last-child {
+        border-right: none;
+      }
+      .value {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 4px;
+        span {
+          font-size: 16px;
+          margin-left: 5px;
+        }
+      }
+      .name {
+        height: 16px;
+        line-height: 16px;
+        font-size: 12px;
+        span:first-child {
+          display: inline-block;
+          height: 14px;
+          border-radius: 1px;
+          margin-right: 7px;
+          vertical-align: -2px;
+        }
+      }
+      &:nth-child(3n+1) .name span:first-child {
+        border: 1px solid #01AFC9;
+      }
+      &:nth-child(3n+2) .name span:first-child {
+        border: 1px solid #5181EC;
+      }
+      &:nth-child(3n) .name span:first-child {
+        border: 1px solid #B461DB;
+      }
+    }
+  }
+  > .bottom {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    > .left,
+    > .right {
+      width: calc(~"50% - 6px");
+    }
+  }
+
+  .iops-card,
+  .bandwidth-card {
+    height: 380px;
+    overflow: hidden;
+  }
+  .iops-card {
+    margin-bottom: 14px;
+  }
+  .bandwidth-card {
+    margin-bottom: 12px;
+  }
+  .iops-card-title,
+  .bandwidth-card-title {
+    position: relative;
+    height: 51px;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 13px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    .ant-select {
+      float: right;
+      margin-right: 30px;
+      margin-top: 13px;
+      font-size: 13px;
+      .ant-select-dropdown {
+        font-size: 13px;
+      }
+      .ant-select-selection--single {
+        height: 26px;
+        line-height: 26px;
+      }
+      .ant-select-selection__rendered {
+        line-height: 26px;
+      }
+      .ant-select-selection-selected-value {
+        padding-right: 10px;
+      }
+    }
+    .anticon-caret-down-right {
+      pointer-events: none;
+      color: #999;
+      position: absolute;
+      right: 38px;
+      top: 19px;
+    }
+  }
+  .iops-card-line-chart,
+  .bandwidth-card-line-chart {
+    width: 100%;
+    height: 329px;
+    overflow: hidden;
+  }
+
+  .cluster-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cluster-data-status-card {
+    width: calc(~"60% - 6px");
+  }
+  .cluster-capacity-use-card {
+    width: calc(~"40% - 6px");
+  }
+  .cluster-data-status-card,
+  .cluster-capacity-use-card {
+    height: 354px;
+  }
+
+  .cluster-data-status-card-title,
+  .cluster-capacity-use-card-title {
+    line-height: 53px;
+    height: 54px;
+    padding-left: 30px;
+    font-size: 13px;
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .cluster-data-status-card-bar-chart,
+  .cluster-capacity-use-card-bar-chart {
+    width: 100%;
+    height: 207px;
+    background: #fcfcfc;
+  }
+
+  .cluster-data-status-card-legend-wrapper,
+  .cluster-capacity-use-card-legend-wrapper {
+    box-sizing: content-box;
+    height: 92px;
+    border-top: 1px solid #eaeaea;
+    background: #fcfcfc;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      li {
+        width: 50%;
+        padding-left: 30px;
+        font-size: 0;
+      }
+      li:nth-child(2n) {
+        padding-left: 0;
+        padding-right: 30px;
+        text-align: right;
+      }
+      .roundRect {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 1px;
+        margin-right: 20px;
+      }
+      .text {
+        display: inline-block;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .cluster-data-status-card-legend-wrapper {
+    li {
+      height: 47px;
+      line-height: 47px;
+    }
+    .healthy .roundRect {
+      background: #29CD7B;
+    }
+    .degraded .roundRect {
+      background: #FCA625;
+    }
+    .wait_recovery .roundRect {
+      background: #EF6D64;
+    }
+    .unavailable .roundRect {
+      background: #eaeaea;
+    }
+  }
+
+  .cluster-capacity-use-card-legend-wrapper {
+    li {
+      height: 94px;
+      line-height: 94px;
+    }
+    .used .roundRect {
+      background: #29CD7B;
+    }
+    .unused .roundRect {
+      background: #eaeaea;
+    }
+  }
+
+  .service-status-card {
+    height: 380px;
+    .service-status-card-title {
+      padding-left: 21px;
+      line-height: 50px;
+      font-size: 13px;
+      background: #fff;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .service-status-card-content-wrapper {
+      height: 329px;
+      background: #01AFC9;
+      ul {
+        display: flex;
+        box-sizing: content-box;
+        height: 270px;
+        margin: 0;
+        padding: 30px 21px;
+        justify-content: space-between;
+        list-style: none;
+      }
+      li {
+        width: 23.5%;
+        height: 100%;
+        color: #fff;
+        background: rgba(255,255,255,0.30);
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
+        border-radius: 2px;
+        .top {
+          height: 143px;
+          margin: 50px 0 0 23%;
+        }
+        .bottom {
+          height: 76px;
+          line-height: 76px;
+          font-size: 16px;
+          text-align: center;
+          border-top: 1px solid rgba(255,255,255,0.40);
+        }
+        // .avail,
+        // .unavail {
+        //   width: 60px;
+        // }
+        .unavail {
+          margin-top: 30px;
+        }
+        .value {
+          font-size: 24px;
+          line-height: 18px;
+        }
+        .label {
+          height: 14px;
+          margin-top: 11px;
+          line-height: 14px;
+          font-size: 0;
+        }
+        .circle {
+          width: 6px;
+          height: 6px;
+          display: inline-block;
+          border: 1px solid #fff;
+          border-radius: 4px;
+          margin-right: 6px;
+        }
+        .text {
+          display: inline-block;
+          vertical-align: -1px;
+          font-size: 12px;
+        }
+        .avail .circle {
+          background: #29CD7B;
+        }
+        .unavail .circle {
+          background: #eaeaea;
+        }
+      }
+    }
+  }
+
+  .server-status-card,
+  .disk-status-card {
+    margin-top: 14px;
+    height: 89.5px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    .server-status-card-left,
+    .server-status-card-right,
+    .disk-status-card-left,
+    .disk-status-card-right {
+      width: 50%;
+      height: 100%;
+    }
+    .server-status-card-title,
+    .disk-status-card-title {
+      margin: 20px 0 12px 30px;
+      font-size: 13px;
+    }
+    .count-wrapper {
+      margin-left: 30px;
+      height: 31px;
+      line-height: 31px;
+      font-size: 0;
+      .text {
+        display: inline-block;
+        font-size: 12px;
+        vertical-align: 3px;
+        margin-right: 11px;
+      }
+      .value {
+        display: inline-block;
+        font-size: 24px;
+        margin-right: 4px;
+      }
+      .unit {
+        display: inline-block;
+        font-size: 24px;
+      }
+    }
+    .server-status-card-right ul,
+    .disk-status-card-right ul {
+      display: flex;
+      width: calc(~"100% - 30px");
+      height: calc(~"100% - 20px");
+      margin: 20px 30px 0 0;
+      justify-content: space-between;
+      li {
+        width: calc(~"33% - 4px");
+        max-width: 72px;
+        height: 100%;
+        font-size: 11px;
+        text-align: center;
+      }
+      .text {
+        margin: 10px 0 12px;
+        line-height: 14px;
+      }
+      .value {
+        margin: 0 8px;
+        line-height: 18px;
+        color: #fff;
+        border-radius: 2px;
+        box-shadow: 0 10px 22px 0 rgba(0,0,0,0.20);
+      }
+      .healthy {
+        background: rgba(41,205,123,.1);
+        .text {
+          color: #29CD7B;
+        }
+        .value {
+          background: #29CD7B;
+        }
+      }
+      .alarmed {
+        background: rgba(252,166,37,.1);
+        .text {
+          color:#FCA625;
+        }
+        .value {
+          background: #FCA625;
+        }
+      }
+      .wrong {
+        background: rgba(239,109,100,.1);
+        .text {
+          color:#EF6D64;
+        }
+        .value {
+          background: #EF6D64;
+        }
+      }
+    }
+  }
+
+  .alert-card {
+    height: 245px;
+    margin-top: 14px;
+    position: relative;
+    .alert-card-title {
+      height: 53px;
+      line-height: 52px;
+      padding-left: 30px;
+      background: #fff;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .alert-card-content-wrapper {
+      display: flex; 
+      background: #fcfcfc;
+      font-size: 0;
+    }
+    .alert-card-pie-chart-wrapper {
+      position: relative;
+      width: 55%;
+      height: 192px;
+    }
+    .alert-card-pie-chart {
+      width: 100%;
+      height: 100%;
+    }
+    .alert-card-pie-chart-total {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+    }
+
+    .alert-card-pie-chart-legend-wrapper {
+      width: 44%;
+      height: 152px;
+      margin: 20px 0;
+      border-left: 1px solid #ededed;
+      ul {
+        margin: 18px 0 18px 40px;
+        height: 116px;
+      }
+    }
+    .alert-card-pie-chart-legend {
+      line-height: 16px;
+      margin-bottom: 17px;
+      font-size: 12px;
+      .circle {
+        display: inline-block;
+        vertical-align: 1px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        box-shadow: 0 10px 20px 0 rgba(0,0,0,0.30);
+      }
+      .label {
+        margin: 0 8px 0 10px;
+      }
+    }
+    .information .circle {
+      background: #29CD7B;
+    }
+    .warning .circle {
+      background: #FDA82A;
+    }
+    .serious .circle {
+      background: #EF6D64;
+    }
+    .disaster .circle {
+      background: #C3180B;
+    }
+  }
+
+  .system-detail-card {
+    margin-top: 12px;
+    height: 282px;
+    display: flex;
+    justify-content: space-between;
+    .system-detail-card-left,
+    .system-detail-card-right {
+      width: calc(~"50% - 6px");
+      height: 100%;
+      background: #fff;
+    }
+    ul {
+      width: 100%;
+      height: 100%;
+      li {
+        height: 94px;
+        margin: 0 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: auto;
+        font-size: 0;
+        border-bottom: 1px solid #eaeaea;
+        &:last-child {
+          border-bottom: none;
+        }
+        .icon-wrapper {
+          flex: 0 0 auto;
+          display: inline-block;
+          margin-top: 30px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          font-size: 14px;
+          color: #fff;
+          background: #01AFC9;
+          border-radius: 20px;
+          box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
+        }
+        .content-wrapper {
+          display: inline-block;
+          margin-top: 23px;
+          margin-left: 30px;
+          max-width: 100px;
+        }
+        .content-name {
+          line-height: 20px;
+          font-size: 12px;
+          margin-bottom: 3px;
+        }
+        .content-count {
+          line-height: 31px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1460px) {
+  .garen-module-overview {
+    > .bottom > .left {
+      width: calc(~"74% - 6px");
+      height: 908px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    > .bottom > .right {
+      height: 908px;
+      position: relative;
+      width: calc(~"26% - 6px");
+    }
+
+    .iops-card,
+    .bandwidth-card {
+      width: calc(~"100% - 452px");
+      height: 448px;
+    }
+
+    .iops-card {
+      margin-bottom: 0px;
+    }
+    .bandwidth-card {
+      margin-bottom: 0px;
+    }
+
+    .iops-card-line-chart,
+    .bandwidth-card-line-chart {
+      height: 397px;
+    }
+
+    .cluster-card-wrapper {
+      // 必须定宽，且和告警一致，否则告警可能无法定位到正确的位置
+      width: 440px;
+      margin-top: 241px;
+      height: 667px;
+      display: block;
+    }
+
+    .cluster-data-status-card,
+    .cluster-capacity-use-card {
+      width: 100%;
+      height: 327px;
+    }
+
+    .cluster-data-status-card {
+      margin-bottom: 12px;
+    }
+
+    .cluster-data-status-card-title,
+    .cluster-capacity-use-card-title {
+      line-height: 52px;
+      height: 53px;
+    }
+
+    .cluster-data-status-card-bar-chart,
+    .cluster-capacity-use-card-bar-chart {
+      height: 197px;
+    }
+
+    .cluster-data-status-card-legend-wrapper,
+    .cluster-capacity-use-card-legend-wrapper {
+      height: 76px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        li {
+          width: 25%;
+          padding-left: 0;
+          text-align: center;
+        }
+        li:nth-child(2n) {
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+    }
+
+    .cluster-data-status-card-legend-wrapper {
+      li {
+        height: 76px;
+        line-height: 76px;
+      }
+    }
+
+    .cluster-capacity-use-card-legend-wrapper {
+      ul li {
+        width: 50%;
+        height: 76px;
+        line-height: 76px;
+      }
+    }
+
+    .service-status-card {
+      height: 360px;
+      .service-status-card-content-wrapper {
+        height: 309px;
+        ul {
+          height: 249px;
+        }
+        li {
+          width: calc(~"25% - 8px");
+          .top {
+            height: 149px;
+            margin-top: 40px;
+          }
+          .bottom {
+            height: 60px;
+            line-height: 59px;
+          }
+        }
+      }
+    }
+
+    .server-status-card,
+    .disk-status-card {
+      margin-top: 12px;
+      height: 92px;
+    }
+
+    .alert-card {
+      width: 440px;
+      height: 229px;
+      margin-top: 0px;
+      position: absolute;
+      top: 0;
+      left: -452px;
+      .alert-card-title {
+        height: 51px;
+        line-height: 50px;
+      }
+      .alert-card-pie-chart-wrapper {
+        height: 178px;
+      }
+      .alert-card-pie-chart-legend-wrapper {
+        height: 148px;
+        margin: 15px 0;
+      }
+    }
+
+    .system-detail-card {
+      height: 327px;
+      ul li {
+        height: 109px;
+        .icon-wrapper {
+          margin-top: 35px;
+        }
+        .content-wrapper {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "en": {
+    "all_pool": "All Pool",
+    "io_service_time": "IO Service Time",
+    "io_utilization_rate": "IO Utilization Rate",
+    "read_io_wait_time": "Read IO Wait Time",
+    "read_iops": "Read IOPS",
+    "read_bandwidth": "Read Bandwidth",
+    "write_io_wait_time": "Write IO Wait Time",
+    "write_iops": "Write IOPS",
+    "write_bandwidth": "Write Bandwidth"
+  },
+  "zh-CN": {
+    "all_pool": "所有存储池",
+    "io_service_time": "IO 服务时间",
+    "io_utilization_rate": "IO 利用率",
+    "read_io_wait_time": "读 IO 等待时间",
+    "read_iops": "读 IOPS",
+    "read_bandwidth": "读带宽",
+    "write_io_wait_time": "写 IO 等待时间",
+    "write_iops": "写 IOPS",
+    "write_bandwidth": "写带宽"
+  }
+}

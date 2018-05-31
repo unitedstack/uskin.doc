@@ -1,0 +1,60 @@
+@title-color: #999999;
+@input-color: #BBBFC5;
+.user-create-keypair {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  .keypair-type {
+    width: 80px;
+  }
+  .ant-tabs {
+    display: flex;
+    flex-direction: column;
+    .ant-tabs-bar .ant-tabs-tab {
+      margin-right: 0;
+      text-align: center;
+    }
+    .ant-tabs-nav {
+      width: 100%;
+      .ant-tabs-tab {
+        width: 50%;
+        color: #6C777A;
+        letter-spacing: 0;
+        font-weight: 200;
+      }
+      .ant-tabs-tab-active {
+        background-color: #B9F1F9;
+        color: #26303D;
+        font-weight: 200;
+      }
+    }
+    .ant-tabs-content {
+      .ant-tabs-tabpane {
+        .keypair-table-title {
+          display: flex;
+          flex: 1;
+          color: @title-color;
+          font-size: 12px;
+          padding-bottom: 6px;
+          span {
+            width: 50%;
+          }
+        }
+        > .keypair-table-content {
+          display: flex;
+          flex: 1;
+          .ant-col-12 {
+            width: 204px;
+          }
+          > input:first-child {
+            margin-right: 2px;
+            margin-bottom: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+.keypair-error-tip {
+  margin-top: 14px;
+}

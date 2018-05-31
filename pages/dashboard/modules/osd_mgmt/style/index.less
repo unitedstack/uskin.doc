@@ -1,0 +1,28 @@
+.garen-module-osd-list {
+  display: flex;
+  flex: 1;
+  .osd-mgmt-capacity-use-wrapper {
+    width: 100px;
+    height: 25px;
+    line-height: 18px;
+    color: #999;
+    .osd-mgmt-total {
+      float: right;
+    }
+    .osd-mgmt-capacity-use-bar {
+      position: relative;
+      margin-top: 3px;
+      height: 4px;
+      background: #F3F3F3;
+      border-radius: 6px;
+    }
+    .osd-mgmt-used-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 6px;
+      background: #1CAFC6;
+      height: 4px;
+    }
+  }
+}

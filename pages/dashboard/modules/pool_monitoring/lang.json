@@ -1,0 +1,20 @@
+{
+  "en": {
+    "client_read_bandwidth": "Client Read Bandwidth",
+    "client_read_iops": "Client Read IOPS",
+    "client_write_bandwidth": "Client Write Bandwidth",
+    "client_write_iops": "Client Write IOPS",
+    "per_second": " / per second",
+    "recovery_key_value_pairs": "Recovery Key-Value Pairs",
+    "recovery_objects": "Recovery Objects"
+  },
+  "zh-CN": {
+    "client_read_bandwidth": "客户端读带宽",
+    "client_read_iops": "客户端读IOPS",
+    "client_write_bandwidth": "客户端写带宽",
+    "client_write_iops": "客户端写 IOPS",
+    "per_second": " / 每秒",
+    "recovery_key_value_pairs": "恢复键值对",
+    "recovery_objects": "恢复对象"
+  }
+}

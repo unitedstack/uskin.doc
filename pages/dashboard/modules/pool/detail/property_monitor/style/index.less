@@ -1,0 +1,87 @@
+.pool-cluster {
+  width: calc(~'25% - 14px');
+  .cluster-data-status-card {
+    width: 100%;
+    height: 288px;
+  }
+
+  .cluster-data-status-card-title {
+    line-height: 42px;
+    padding-left: 20px;
+    font-size: 12px;
+    background: #F6F6F6;
+    border: 1px solid #EDEDED;
+    border-radius: 2px;
+  }
+
+  .cluster-data-status-card-bar-chart {
+    width: 100%;
+    height: 121px;
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-bottom: none;
+  }
+
+  .cluster-data-status-card-legend-wrapper {
+    box-sizing: content-box;
+    border-top: 1px solid #eaeaea;
+    background: #fcfcfc;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: #999999;
+        font-size: 0;
+        margin-left: calc(~'50% - 50px');
+      }
+      .roundRect {
+        display: inline-block;
+        vertical-align: -1.5px;
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      .text {
+        display: inline-block;
+        font-size: 10px;
+        span {
+          display: inline-block;
+          margin-left: 18px;
+          margin-right: 6px;
+          font-size: 14px;
+          color: #252F3D;
+        }
+      }
+    }
+  }
+
+  .cluster-data-status-card-legend-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-top: none;
+    li {
+      margin-bottom: 10px;
+      font-size: 12px; 
+    }
+    .healthy .roundRect {
+      background: #29CD7B;
+
+    }
+    .degraded .roundRect {
+      background: #FCA625;
+    }
+    .wait_recovery .roundRect {
+      background: #B461DB;
+    }
+    .unavailable .roundRect {
+      background: #C7CBD0;
+    }
+  }
+}

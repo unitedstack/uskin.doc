@@ -1,0 +1,116 @@
+{
+  "tabs": [{
+    "name": ["storage","user"],
+    "key": "user",
+    "default": true
+  }],
+  "btns": [{
+    "value": ["create","user"],
+    "key": "create",
+    "icon": "create",
+    "disabled": true
+  }, {
+    "value": ["start"],
+    "key": "start",
+    "icon": "enable",
+    "type": "primary",
+    "disabled": true
+  }, {
+    "value": ["forbidden"],
+    "key": "forbidden",
+    "icon": "disable",
+    "type": "danger",
+    "disabled": true
+  }, {
+    "value": ["more"],
+    "key": "more",
+    "iconClass": "more",
+    "type": "primary",
+    "dropdown": [{
+      "value": ["modify", "user", "information"],
+      "key": "modify_user_information",
+      "disabled": true
+    }, {
+      "value": ["modify", "quota"],
+      "key": "modify_quota",
+      "disabled": true
+    }, {
+      "value": ["create", "keypair"],
+      "key": "create_keypair",
+      "disabled": true
+    }, {
+      "value": ["delete", "keypair"],
+      "key": "delete_keypair",
+      "disabled": true
+    }, {
+      "type": "divider"
+    }, {
+      "value": ["delete", "user"],
+      "key": "delete_user",
+      "disabled": true
+    }]
+  }, {
+    "value": ["refresh"],
+    "key": "refresh",
+    "icon": "refresh",
+    "type": "primary",
+    "disabled": true
+  }],
+  "search": {
+    "placeholder": ["user_id"]
+  },
+  "table": {
+    "checkbox": true,
+    "rowKey": "user_id",
+    "dataKey": "user_id",
+    "limit": 10,
+    "loading": false,
+    "columns": [{
+      "title": ["userName"],
+      "key": "display_name",
+      "dataIndex": "user_id",
+      "type": "captain"
+    }, {
+      "title": ["email"],
+      "key": "email",
+      "dataIndex": "email"
+    }, {
+      "title": ["status"],
+      "key": "suspended",
+      "dataIndex": "suspended"
+    }, {
+      "title": ["user", "bucket", "number"],
+      "key": "max_buckets",
+      "dataIndex": "max_buckets"
+    }, {
+      "title": ["user", "quota"],
+      "key": "user_quota",
+      "dataIndex": "user_quota"
+    }, {
+      "title": ["defaultQuota"],
+      "key": "bucket_quota",
+      "dataIndex": "bucket_quota"
+    },{
+      "title": ["system_user"],
+      "key": "system",
+      "dataIndex": "system"
+    }],
+    "data": [],
+    "detail": {
+      "tabs": [{
+        "name": ["monitor"],
+        "key": "monitor",
+        "default": true
+      }, {
+        "name": ["keypair"],
+        "key": "keypair"
+      }, {
+        "name": ["bucket"],
+        "key": "bucket"
+      }, {
+        "name": ["quota"],
+        "key": "quota"
+      }]
+    }
+  }
+}

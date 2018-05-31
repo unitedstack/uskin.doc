@@ -1,0 +1,55 @@
+{
+  "tabs": [{
+    "name": ["server"],
+    "key": "server",
+    "default": true
+  }],
+  "btns": [{
+    "value": ["refresh"],
+    "key": "refresh",
+    "type": "primary",
+    "icon": "refresh"
+  }],
+  "search": {
+   "placeholder": ["server_id"]
+  },
+  "table": {
+    "checkbox": false,
+    "rowKey": "id",
+    "dataKey": "id",
+    "loading": false,
+    "limit": 10,
+    "columns": [{
+      "title": ["name"],
+      "key": "name",
+      "dataIndex": "name",
+      "type": "captain"
+    }, {
+      "title": ["status"],
+      "key": "status",
+      "dataIndex": "status"
+    }, {
+      "title": ["ipmi"],
+      "key": "ipmi",
+      "dataIndex": "ipmi"
+    }, {
+      "title": ["disk_num"],
+      "key": "disk_num",
+      "dataIndex": "disk_num"
+    }],
+    "data": [],
+    "detail": {
+      "tabs": [{
+        "name": ["description"],
+        "key": "description",
+        "default": true
+      }, {
+        "name": ["monitor"],
+        "key": "monitor"
+      }, {
+        "name": ["disk"],
+        "key": "disk"
+      }]
+    }
+  }
+}

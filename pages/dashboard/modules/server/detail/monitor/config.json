@@ -1,0 +1,118 @@
+{
+  "charts": [
+    {
+    "title": "cpu_utilization",
+    "key": "cpu",
+    "chartOpt": {
+      "hasLegend": true,
+      "legendPos": "bottom",
+      "yAxisUnit": "%"
+    },
+    "data": [{
+      "name": "cpu_utilization",
+      "lineColor": "#01AFC9",
+      "areaColor": "rgba(1,175,201,0.30)",
+      "color": "#01AFC9",
+      "data": []
+    }]
+  },
+  {
+    "title": "memory_utilization",
+    "key": "memory",
+    "chartOpt": {
+      "hasLegend": true,
+      "legendPos": "bottom",
+      "yAxisUnit": "%"
+    },
+    "data": [{
+      "name": "memory_utilization",
+      "lineColor": "#01AFC9",
+      "areaColor": "rgba(1,175,201,0.30)",
+      "color": "#01AFC9",
+      "data": []
+    }]
+  },
+  {
+    "title": "network_bandwidth",
+    "key": "bandwidth",
+    "chartOpt": {
+      "hasLegend": true,
+      "legendPos": "bottom"
+    },
+    "data": [{
+      "name": "network_receive_bandwidth",
+      "key": "receive",
+      "color": "rgba(255,153,0,1)",
+      "areaColor": "rgba(255,153,0,0.3)",
+      "data": []
+    }, {
+      "name": "network_transmit_bandwidth",
+      "color": "rgba(61,189,125,1)",
+      "key": "transmit",
+      "areaColor": "rgba(61,189,125,0.3)",
+      "data": []
+    }]
+  },
+  {
+    "title": "packet",
+    "key": "packet",
+    "chartOpt": {
+      "hasLegend": true,
+      "legendPos": "bottom"
+    },
+    "data": [{
+      "name": "network_receive_packets",
+      "key": "receive",
+      "color": "rgba(255,153,0,1)",
+      "areaColor": "rgba(255,153,0,0.3)",
+      "data": []
+    }, {
+      "name": "network_transmit_packets",
+      "key": "transmit",
+      "color": "rgba(61,189,125,1)",
+      "areaColor": "rgba(61,189,125,0.3)",
+      "data": []
+    }]
+  },
+  {
+    "title": "packets_loss",
+    "key": "packets_loss",
+    "chartOpt": {
+      "hasLegend": true,
+      "legendPos": "bottom"
+    },
+    "data": [{
+      "name": "receive_packets_loss",
+      "key": "receive",
+      "color": "rgba(255,153,0,1)",
+      "areaColor": "rgba(255,153,0,0.3)",
+      "data": []
+    }, {
+      "name": "transmit_packets_loss",
+      "key": "transmit",
+      "color": "rgba(61,189,125,1)",
+      "areaColor": "rgba(61,189,125,0.3)",
+      "data": []
+    }]
+  }, {
+    "title": "error_packets",
+    "key": "error_packets",
+    "chartOpt": {
+      "hasLegend": true,
+      "legendPos": "bottom"
+    },
+    "data": [{
+      "name": "receive_error_packets",
+      "key": "receive",
+      "color": "rgba(255,153,0,1)",
+      "areaColor": "rgba(255,153,0,0.3)",
+      "data": []
+    }, {
+      "name": "transmit_error_packets",
+      "key": "transmit",
+      "color": "rgba(61,189,125,1)",
+      "areaColor": "rgba(61,189,125,0.3)",
+      "data": []
+    }]
+  }]
+}

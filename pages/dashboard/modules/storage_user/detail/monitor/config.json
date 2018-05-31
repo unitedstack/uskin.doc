@@ -1,0 +1,60 @@
+{
+  "initialDelay": 300,
+  "charts": [
+    {
+    "title": "upload_bandwidth",
+    "key": "upload_bandwidth",
+    "chartOpt": {
+      "hasLegend": false
+    },
+    "data": [{
+      "name": "upload_bandwidth",
+      "lineColor": "#FF9900",
+      "areaColor": "rgba(255,153,0,0.30)",
+      "color": "#FF9900",
+      "data": []
+    }]
+  },
+  {
+    "title": "download_bandwidth",
+    "key": "download_bandwidth",
+    "chartOpt": {
+      "hasLegend": false
+    },
+    "data": [{
+      "name": "download_bandwidth",
+      "lineColor": "#3DBD7D",
+      "areaColor": "rgba(61,189,125,0.30)",
+      "color": "#3DBD7D",
+      "data": []
+    }]
+  },
+  {
+    "title": "upload_time",
+    "key": "upload_time",
+    "chartOpt": {
+      "hasLegend": false
+    },
+    "data": [{
+      "name": "upload_time",
+      "lineColor": "#FF9900",
+      "areaColor": "rgba(255,153,0,0.30)",
+      "color": "#FF9900",
+      "data": []
+    }]
+  },
+  {
+    "title": "download_time",
+    "key": "download_time",
+    "chartOpt": {
+      "hasLegend": false
+    },
+    "data": [{
+      "name": "download_time",
+      "lineColor": "#3DBD7D",
+      "areaColor": "rgba(61,189,125,0.30)",
+      "color": "#3DBD7D",
+      "data": []
+    }]
+  }]
+}

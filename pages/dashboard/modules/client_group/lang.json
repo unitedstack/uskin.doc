@@ -1,0 +1,16 @@
+{
+  "en": {
+    "associate_clients": "Associate Client",
+    "associate_block_storage_volumes": "Associate Storage Volumes",
+    "client_group_input_error_pop_msg": "The client group's name is illegal, please check your input",
+    "edit_client_group": "Edit Client Group",
+    "sure_to_delete_client_group": "Are you sure you want to delete client group {0}"
+  },
+  "zh-CN": {
+    "associate_clients": "关联客户端",
+    "associate_block_storage_volumes": "关联块存储卷",
+    "client_group_input_error_pop_msg": "客户端组名称输入有误，请检查您的输入",
+    "edit_client_group": "编辑客户端组",
+    "sure_to_delete_client_group": "您确定要删除客户端组 {0} 吗"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "tabs": [{
+    "name": ["cluster_topology"],
+    "key": "cluster_topology",
+    "default": true
+  }]
+}

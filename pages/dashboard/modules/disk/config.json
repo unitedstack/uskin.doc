@@ -1,0 +1,59 @@
+{
+  "tabs": [{
+    "name": ["disk"],
+    "key": "disk",
+    "default": true
+  }],
+  "btns": [{
+    "value": ["refresh"],
+    "key": "refresh",
+    "type": "primary",
+    "icon": "refresh"
+  }],
+  "search": {
+   "placeholder": ["pls_enter", "wwn"]
+  },
+  "table": {
+    "checkbox": false,
+    "rowKey": "id",
+    "dataKey": "id",
+    "loading": false,
+    "limit": 10,
+    "columns": [{
+      "title": ["wwn"],
+      "key": "id",
+      "dataIndex": "id",
+      "type": "captain"
+    }, {
+      "title": ["disk_name"],
+      "key": "disk_name",
+      "dataIndex": "name"
+    }, {
+      "title": ["type"],
+      "key": "type",
+      "dataIndex": "rotational"
+    }, {
+      "title": ["server"],
+      "key": "server",
+      "dataIndex": "server_id"
+    }, {
+      "title": ["size"],
+      "key": "size",
+      "dataIndex": "size"
+    }],
+    "data": [],
+    "detail": {
+      "tabs": [{
+        "name": ["description"],
+        "key": "description",
+        "default": true
+      }, {
+        "name": ["monitor"],
+        "key": "monitor"
+      }, {
+        "name": ["smart_info"],
+        "key": "smart_info"
+      }]
+    }
+  }
+}

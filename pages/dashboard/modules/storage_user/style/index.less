@@ -1,0 +1,130 @@
+@enabled_color: #01AFC9;
+@disabled_color: #A3A7AD;
+@border_color: #EDEDED;
+.garen-module-storage-user {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  .detail-content {
+    p{
+      margin-top: 14px;
+    }
+  }
+  > .progress-usage {
+    width: 200px;
+    .usage {
+      float: left;
+    }
+    .max {
+      float: right;
+    }
+  }
+  .quota {
+    width: fit-content;
+    border-radius: 100px;
+    padding: 2px 10px;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 14px;
+    &.disabled {
+      background: rgba(163,167,173,0.20);
+      color: @disabled_color;
+    }
+    &.enabled {
+      background: rgba(1,175,201,0.20);
+      color: @enabled_color;
+    }
+  }
+  .detail-quota {
+    margin-top: 16px;
+    .detail-user-quota {
+      .detail-name {
+        background: #F6F6F6;
+        border: 1px solid @border_color;
+        border-bottom: none;
+        border-radius: 2px;
+        font-size: 12px;
+        color: #252F3D;
+        line-height: 14px;
+        height: 42px;
+        line-height: 42px;
+        padding-left: 20px;
+      }
+      .detail-form {
+        display: flex;
+        flex: 1;
+        background: #FFFFFF;
+        border: 1px solid @border_color;
+        border-radius: 2px;
+        .detail-form-per {
+          margin: 20px;
+          width: 33.3%;
+          height: 33.3%;
+          border: 1px solid @border_color;
+          padding: 45px 42px 35px 30px;
+          color: #252F3D;
+          .detail-form-per-title {
+            letter-spacing: 0;
+            margin: 0;
+            padding-bottom: 16px;
+          }
+          .detail-form-per-number {
+            font-size: 24px;
+            letter-spacing: 0;
+            line-height: 21px;
+            padding-bottom: 24px;
+            margin: 0;
+            span {
+              margin-left: 6px;
+              color: #999999;
+              font-size: 12px;
+            }
+          }
+          .progress-usage-proportion {
+            padding-top: 10px;
+            text-align: right;
+            color: #999999;
+          }
+          .progress-usage {
+            padding-bottom: 24px;
+            color: #999999;
+          }
+          .usage-base-base {
+           i {
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              background: #939BA3;
+              margin-right: 8px;
+              border-radius: 50%;
+            }
+            .usage-base {
+              display: inline-block;
+              margin: 0;
+              color: #999999;
+              font-size: 12px;
+              >:first-child {
+                margin-bottom: 16px;
+              }
+              
+              > span:first-child {
+                font-size: 15px;
+                margin-left: 16px;
+                color: #252F3D;
+              }
+              > span:last-child {
+                margin-left: 6px;
+              }
+            }
+          }
+          > .usage-base-base:last-child {
+            padding-top: 18px;
+            i {
+              background: #01AFC9;
+            }
+          }
+        }
+      }
+    }
+  }
+}

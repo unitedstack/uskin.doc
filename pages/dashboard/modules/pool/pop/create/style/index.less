@@ -1,0 +1,121 @@
+@strong_color: #ff5a67;
+@bg_color: #FCFCFC;
+@border_color: #F6F6F6;
+@title-color: #999999;
+@input-color: #BBBFC5;
+@font-color: #252F3D;
+@active-bg-color: #01AFC9;
+@white-color: #ffffff;
+@tab-border-color: #e8e8e8;
+.hide {
+  display: none;
+}
+strong {
+  color: @strong_color;
+  margin-left: 3px;
+}
+
+#main {
+  position: relative;
+}
+.create-pool-big {
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  padding-left: 20px;
+  z-index: 99;
+  background-color: @white-color;
+  font-size: 12px;
+  margin-left: 12px;
+  margin-top: 12px;
+  .create-pool-title {
+    height: 48px;
+    line-height: 48px;
+    span {
+      cursor: pointer;
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
+  .create-pool-content {
+    overflow: auto;
+    .content-wrapper {
+      width: 570px;
+      .ant-form-item {
+        .ant-form-item-control-wrapper {
+          width: 450px;
+          float: right;
+        }
+      }
+      .pool-copy-number, .fault_domain {
+        .pool-copy-number-button {
+          display: flex;
+          flex: 1;
+          flex-wrap: wrap;
+          > input {
+            text-align: center;
+            border: none;
+            width: 32%;
+            margin-right: 2%;
+            margin-bottom: 6px;
+            background-color: @border_color; 
+            color: @font-color;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            &:nth-of-type(3n + 3) {
+              margin-right: 0;
+            }
+            &:focus {
+              outline: 0;
+              background-color: @active-bg-color !important;
+              color: @white-color !important;
+            }
+            &.actives {
+              background-color: @active-bg-color !important;
+              color: @white-color !important;
+            }
+          }
+          .disabled {
+            cursor: not-allowed;
+          }
+        }
+      }
+      .error-tip {
+        .alert-row {
+          padding-left: 120px;
+        }
+      }
+    }
+  }
+  .cancel-button {
+    background: @normal-color;
+    color: @text-color;
+    border-radius: 2px;
+    border: none;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .create-button {
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .ant-modal-mask{
+    display: none;
+  }
+  .modal-mask {
+    display: none;
+  }
+  .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container {
+    height: auto;
+  }
+}

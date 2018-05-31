@@ -1,0 +1,26 @@
+{
+  "en": {
+    "cpu_usage": "CPU Usage",
+    "flow": "Flow",
+    "gateway_address": "Gateway Address",
+    "memory_usage": "Memory Usage",
+    "number_of_volumes": "Number of Volumes",
+    "number_of_client_groups": "Number of Client Groups",
+    "properties": "Properties",
+    "process_list": "Process List",
+    "received_flow": "Received Flow",
+    "transmit_flow": "Transmit Flow"
+  },
+  "zh-CN": {
+    "cpu_usage": "CPU 使用率",
+    "flow": "流量",
+    "gateway_address": "网关地址",
+    "memory_usage": "内存使用率",
+    "number_of_volumes": "卷数量",
+    "number_of_client_groups": "客户端组数量",
+    "properties": "属性",
+    "process_list": "进程列表",
+    "received_flow": "进流量",
+    "transmit_flow": "出流量"
+  }
+}

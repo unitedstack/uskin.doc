@@ -1,0 +1,50 @@
+.garen-module-client-group {
+  display: flex;
+  flex: 1;
+  .client-group-expand-row {
+    margin-left: 62px;
+    font-size: 12px;
+    line-height: 18px;
+    .group-name {
+      margin-bottom: 20px;
+      overflow: hidden;
+      span:first-child {
+        margin-right: 10px;
+        color: #6c777a;
+      }
+      span:last-child {
+        color: #a3a7ad;
+      }
+    }
+    .access-path,
+    .volume {
+      div:first-child {
+        width: 70px;
+        float: left;
+      }
+    }
+
+    .access-path {
+      margin-bottom: 14px;
+    }
+    ul {
+      width: calc(~"100% - 90px");
+      float: left;
+      padding: 0;
+      margin: 0;
+      li {
+        float: left;
+        width: 33%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 71px 6px 0;
+      }
+    }
+  }
+  .clear-fix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

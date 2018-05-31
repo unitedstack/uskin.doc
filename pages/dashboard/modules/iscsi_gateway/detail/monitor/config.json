@@ -1,0 +1,62 @@
+{
+  "charts": [
+    {
+      "title": "memory_utilization",
+      "key": "memory",
+      "chartOpt": {
+        "yAxisUnit": "%"
+      },
+      "data": [{
+        "name": "memory_utilization",
+        "lineColor": "#FF9900",
+        "areaColor": "rgba(255,153,0,0.30)",
+        "color": "#FF9900",
+        "data": []
+      }]
+    },
+    {
+    "title": "cpu_utilization",
+    "key": "cpu",
+    "chartOpt": {
+      "hasLegend": false,
+      "yAxisUnit": "%"
+    },
+    "data": [{
+      "name": "cpu_utilization",
+      "lineColor": "#FF9900",
+      "areaColor": "rgba(255,153,0,0.30)",
+      "color": "#FF9900",
+      "data": []
+    }]
+  },
+  {
+    "title": "received_flow",
+    "key": "received_flow",
+    "chartOpt": {
+      "hasLegend": false
+    },
+    "data": [{
+      "name": "received_flow",
+      "key": "received_flow",
+      "lineColor": "#29CD7B",
+      "color": "#29CD7B",
+      "areaColor": "rgba(41,205,123,0.30)",
+      "data": []
+    }]
+  },
+  {
+    "title": "transmit_flow",
+    "key": "transmit_flow",
+    "chartOpt": {
+      "hasLegend": false
+    },
+    "data": [{
+      "name": "transmit_flow",
+      "key": "transmit_flow",
+      "lineColor": "#29CD7B",
+      "color": "#29CD7B",
+      "areaColor": "rgba(41,205,123,0.30)",
+      "data": []
+    }]
+  }]
+}

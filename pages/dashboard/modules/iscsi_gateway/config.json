@@ -1,0 +1,48 @@
+{
+  "tabs": [{
+    "name": ["client"],
+    "key": "iscsi_mgmt"
+  }, {
+    "name": ["client_group"],
+    "key": "client_group"
+  }, {
+    "name": ["iscsi_gateway"],
+    "key": "iscsi_gateway",
+    "default": true
+  }],
+  "btns": [],
+  "table": {
+    "rowKey": "id",
+    "loading": true,
+    "limit": 10,
+    "columns": [{
+      "title": ["name"],
+      "dataIndex": "name",
+      "key": "name",
+      "type": "captain"
+    }, {
+      "title": ["status"],
+      "key": "status",
+      "dataIndex": "status"
+    }, {
+      "title": ["gateway_address"],
+      "key": "gateway_address",
+      "dataIndex": "gateway_address"
+    }, {
+      "title": ["number_of_volumes"],
+      "key": "number_of_volumes",
+      "dataIndex": "number_of_volumes"
+    }],
+    "data": [],
+    "detail": {
+      "tabs": [{
+        "name": ["properties"],
+        "key": "properties",
+        "default": true
+      }, {
+        "name": ["monitor"],
+        "key": "monitor"
+      }]
+    }
+  }
+}

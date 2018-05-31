@@ -1,0 +1,14 @@
+{
+  "en": {
+    "no_select": "No Info",
+    "osd_status": "OSD Status",
+    "osd_size": "OSD Capacity",
+    "osd_used": "Used Capacity"
+  }, 
+  "zh-CN": {
+    "no_select": "暂无选中",
+    "osd_status": "OSD状态",
+    "osd_size": "磁盘总容量",
+    "osd_used": "已使用容量"
+  }
+}

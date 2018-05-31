@@ -1,0 +1,72 @@
+{
+    "tabs": [{
+      "name": ["data_policy"],
+      "key": "data_policy",
+      "default": true
+    }],
+    "btns": [{
+      "value": ["create", "data_policy"],
+      "key": "create",
+      "type": "default",
+      "icon": "create",
+      "disabled": true
+    }, {
+      "value": ["more"],
+      "key": "more",
+      "type": "primary",
+      "iconClass": "more",
+      "dropdown": [{
+        "value": ["modify"],
+        "key": "modify"
+      }, {
+        "value": ["set", "default_data_policy"],
+        "key": "setDefaultPolicy"
+      }, {
+        "type": "divider"
+      }, {
+        "value": ["delete"],
+        "key": "delete"
+      }]
+    }, {
+      "value": ["refresh"],
+      "key": "refresh",
+      "type": "primary",
+      "icon": "refresh"
+    }],
+    "search": {
+      "placeholder": ["placement_id"]
+    },
+    "table": {
+      "checkbox": true,
+      "rowKey": "id",
+      "dataKey": "id",
+      "loading": false,
+      "limit": 10,
+      "columns": [{
+        "title": ["name"],
+        "key": "name",
+        "dataIndex": "name",
+        "type": "captain"
+      }, {
+        "title": ["associated_pool"],
+        "key": "associated_pool",
+        "dataIndex": "associated_pool"
+      }, {
+        "title": ["yorn_zip"],
+        "key": "yorn_zip",
+        "dataIndex": "yorn_zip"
+      }, {
+        "title": ["yorn_index"],
+        "key": "yorn_index",
+        "dataIndex": "yorn_index"
+      }],
+      "data": [],
+      "detail": {
+        "tabs": [{
+          "name": ["description"],
+          "key": "description",
+          "default": true
+        }]
+      }
+    }
+  }

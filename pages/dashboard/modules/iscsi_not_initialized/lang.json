@@ -1,0 +1,8 @@
+{
+  "en": {
+    "iscsi_not_initialized_info": "iSCSI has not been initialized yet! If you need to use it, please contact the administrator first."
+  },
+  "zh-CN": {
+    "iscsi_not_initialized_info": "iSCSI还未初始化！如需要使用，请先联系管理员。"
+  }
+}

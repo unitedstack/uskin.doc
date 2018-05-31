@@ -1,0 +1,64 @@
+{
+  "tabs": [{
+    "name": ["client"],
+    "key": "iscsi_mgmt"
+  }, {
+    "name": ["client_group"],
+    "key": "client_group",
+    "default": true
+  }, {
+    "name": ["iscsi_gateway"],
+    "key": "iscsi_gateway"
+  }],
+  "btns": [{
+    "value": ["create", "client_group"],
+    "key": "create",
+    "type": "create",
+    "icon": "create"
+  }, {
+    "value": ["more"],
+    "key": "more",
+    "type": "primary",
+    "iconClass": "more",
+    "dropdown": [{
+      "value": ["edit_client_group"],
+      "key": "edit_client_group",
+      "disabled": true
+    }, {
+      "value": ["associate_block_storage_volumes"],
+      "key": "associate",
+      "disabled": true
+    }, {
+      "type": "divider"
+    }, {
+      "value": ["delete"],
+      "key": "delete",
+      "disabled": true
+    }]
+  }, {
+    "value": ["refresh"],
+    "key": "refresh",
+    "type": "primary",
+    "icon": "refresh"
+  }],
+  "table": {
+    "checkbox": true,
+    "rowKey": "id",
+    "loading": true,
+    "limit": 10,
+    "columns": [{
+      "title": ["name"],
+      "key": "name",
+      "dataIndex": "name"
+    }, {
+      "title": ["client"],
+      "key": "client",
+      "dataIndex": "client"
+    }, {
+      "title": ["block_storage_volume"],
+      "key": "block_storage_volume",
+      "dataIndex": "block_storage_volume"
+    }],
+    "data": []
+  }
+}

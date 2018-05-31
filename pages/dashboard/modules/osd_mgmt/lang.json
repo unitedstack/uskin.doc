@@ -1,0 +1,36 @@
+{
+  "en": {
+    "capacity_use": "Capacity Use",
+    "belong_server": "Belong Server",
+    "bandwidth": "Bandwidth",
+    "osd_list": "OSD List",
+    "osd_id": "OSD ID",
+    "io_wait_time": "IO Wait Time",
+    "process_status": "Process's Status",
+    "status_of_use": "Status of Use",
+    "real_time": "Real Time",
+    "within_three_hours": "three hours",
+    "within_one_day": "One Day",
+    "within_one_week": "One Week",
+    "within_one_month": "One Month",
+    "within_three_months": "Three Months",
+    "used_capacity": "Used Capacity"
+  },
+  "zh-CN": {
+    "capacity_use": "容量使用",
+    "belong_server": "所属服务器",
+    "bandwidth": "带宽",
+    "osd_list": "OSD 列表",
+    "osd_id": "OSD ID",
+    "io_wait_time": "IO 等待时间",
+    "process_status": "进程状态",
+    "status_of_use": "使用状态",
+    "real_time": "实时",
+    "within_three_hours": "3小时内",
+    "within_one_day": "1天内",
+    "within_one_week": "1周之内",
+    "within_one_month": "1个月之内",
+    "within_three_months": "3个月之内",
+    "used_capacity": "使用容量"
+  }
+}

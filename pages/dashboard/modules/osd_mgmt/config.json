@@ -1,0 +1,61 @@
+{
+  "tabs": [{
+    "name": ["osd_list"],
+    "key": "osd_mgmt",
+    "default": true
+  }, {
+    "name": ["osd_monitoring"],
+    "key": "osd_monitoring"
+  }],
+  "btns": [{
+    "value": ["refresh"],
+    "key": "refresh",
+    "type": "primary",
+    "icon": "refresh"
+  }],
+  "search": {
+    "placeholder": ["osd_id"]
+  },
+  "table": {
+    "rowKey": "id",
+    "loading": true,
+    "limit": 10,
+    "columns": [{
+      "title": ["name"],
+      "dataIndex": "name",
+      "key": "name",
+      "type": "captain"
+    }, {
+      "title": ["capacity_use"],
+      "key": "capacity_use",
+      "dataIndex": "capacity_use"
+    }, {
+      "title": ["belong_pool"],
+      "key": "belong_pool",
+      "dataIndex": "belong_pool"
+    }, {
+      "title": ["disk"],
+      "key": "disk",
+      "dataIndex": "disk"
+    }, {
+      "title": ["process_status"],
+      "key": "process_status",
+      "dataIndex": "process_status"
+    }, {
+      "title": ["status_of_use"],
+      "key": "status_of_use",
+      "dataIndex": "status_of_use"
+    }],
+    "data": [],
+    "detail": {
+      "tabs": [{
+        "name": ["properties"],
+        "key": "properties",
+        "default": true
+      }, {
+        "name": ["monitor"],
+        "key": "monitor"
+      }]
+    }
+  }
+}

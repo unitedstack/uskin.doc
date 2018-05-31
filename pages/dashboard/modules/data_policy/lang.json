@@ -1,0 +1,33 @@
+{
+  "en": {
+    "associated_pool": "Associated Pool",
+    "bucket_number": "Number of buckets",
+    "data_policy": "Data Policy",
+    "default": "Default",
+    "default_data_policy": "Default Data Policy",
+    "placement_alerttip": "The Placement link buckets, cannot deleted, please first remove the associated buckets",
+    "placement_id": "Placement ID",
+    "relevance_bucket_list": "Relevance Bucket List",
+    "select_zip": "Select Algorithm",
+    "set": "Set ",
+    "yorn_default": "Whether To Set Default",
+    "yorn_index": "Whether To Open Index",
+    "yorn_zip": "Whether To Open The Compressed"
+  },
+  
+  "zh-CN": {
+    "associated_pool": "关联存储池",
+    "bucket_number": "应用存储桶个数",
+    "data_policy": "数据策略",
+    "default": "默认",
+    "default_data_policy": "默认存储策略",
+    "placement_alerttip": "该数据策略关联了存储桶，不能删除，请您先删除关联的存储桶。",
+    "placement_id": "存储策略ID",
+    "relevance_bucket_list": "关联的存储桶列表",
+    "select_zip": "选择压缩算法",
+    "set": "设置",
+    "yorn_default": "是否设置为默认",
+    "yorn_index": "是否开启索引",
+    "yorn_zip": "是否开启压缩"
+  }
+}

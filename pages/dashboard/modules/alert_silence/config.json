@@ -1,0 +1,81 @@
+{
+  "tabs": [{
+    "name": ["alert_silence"],
+    "key": "alert_silence",
+    "default": true
+  }],
+  "btns": [{
+    "value": ["create_alert_silence"],
+    "key": "create",
+    "type": "create",
+    "icon": "create"
+  }, {
+    "value": ["more_operation"],
+    "key": "more",
+    "type": "primary",
+    "iconClass": "more",
+    "dropdown": [{
+      "value": ["maintain_cluster"],
+      "key": "maintain_cluster"
+    }, {
+      "value": ["maintain_server"],
+      "key": "maintain_server"
+    }, {
+      "value": ["delete"],
+      "key": "delete",
+      "disabled": true
+    }]
+  }, {
+    "value": ["refresh"],
+    "key": "refresh",
+    "type": "primary",
+    "icon": "refresh"
+  }],
+  "operations": [{
+    "key": "resource",
+    "type": "select",
+    "transpile": true,
+    "width": 125,
+    "data": [{
+      "value": "all",
+      "name": "all"
+    }, {
+      "value": "active",
+      "name": "processing"
+    }, {
+      "value": "pending",
+      "name": "not_yet_started"
+    }, {
+      "value": "expired",
+      "name": "expired"
+    }]
+  }],
+  "table": {
+    "checkbox": true,
+    "rowKey": "id",
+    "loading": true,
+    "limit": 10,
+    "columns": [{
+      "title": ["id"],
+      "dataIndex": "id",
+      "key": "id"
+    }, {
+      "title": ["status"],
+      "dataIndex": "status",
+      "key": "status"
+    }, {
+      "title": ["creator"],
+      "key": "creator",
+      "dataIndex": "creator"
+    }, {
+      "title": ["comment"],
+      "key": "comment",
+      "dataIndex": "comment"
+    }, {
+      "title": ["end_time"],
+      "key": "end_time",
+      "dataIndex": "end_time"
+    }],
+    "data": []
+  }
+}
