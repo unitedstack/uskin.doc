@@ -1,16 +1,4 @@
 @import './login.less';
-@import "../../../iconfonts/fonts/icons.less";
-
-@font-face {
-	font-family:"icons";
-	src:url("../../../iconfonts/fonts/icons.eot?44f1eb63f3cc6072d9bcf307fcef4971");
-	src:url("../../../iconfonts/fonts/icons.eot?#iefix") format("embedded-opentype"),
-		url("../../../iconfonts/fonts/icons.woff?44f1eb63f3cc6072d9bcf307fcef4971") format("woff"),
-		url("../../../iconfonts/fonts/icons.ttf?44f1eb63f3cc6072d9bcf307fcef4971") format("truetype"),
-		url("../../../iconfonts/fonts/icons.svg?44f1eb63f3cc6072d9bcf307fcef4971#icons") format("svg");
-	font-weight:normal;
-	font-style:normal;
-}
 
 html{
   height: 100%;
@@ -20,42 +8,5 @@ html{
     height: 100%;
     background: url('/public/assets/login/loginBg.png') no-repeat center center / cover;
     font-family: 'Microsoft YaHei', Helvetica,Arial, sans-serif;
-  }
-}
-
-.error{
-  border: 1px solid #ef5665!important;
-}
-
-.disabled{
-  cursor: not-allowed;
-  background-color: #d5dddf!important;
-}
-
-.open{
-  color: #1CAFC6!important;
-}
-
-body{
-  display: flex;
-  flex-direction: column;
-  header{
-    flex: 1;
-  }
-  #container{
-    flex: 1;
-  }
-  footer{
-    flex: 2;
-    position: relative;
-    z-index: -10;
-    span{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 40px; 
-      font-size: 12px;
-      color: #fff;
-    }
   }
 }

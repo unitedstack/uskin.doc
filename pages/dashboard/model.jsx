@@ -1,95 +1,20 @@
 import React from 'react';
-import {SideMenu, history} from 'ufec';
-import Navbar from 'client/components/navbar/index';
 import { Switch, Route, Redirect } from 'react-router-dom';
-// global <a> href delegate
-import 'client/utils/router_delegate';
 import loader from './cores/loader';
-import './cores/watchdog';
-import './cores/ws';
 const configs = loader.configs;
 
 class Model extends React.Component {
   constructor(props) {
     super(props);
-    // 放在componentDidMount中在初始化的时候无法正确监听到Redirect
-    history.listen(h => {
-      this.setState({
-        currentModule: this._filterMenu(history.getPathList()[0])
-      });
-    });
   }
   state = {
-    menus: [],
-    currentModule: this._filterMenu(history.getPathList()[0]),
-    collapsed: false
+    menus: []
   };
-
-  static getDerivedStateFromProps(nextProps, prevState) {
-    return null;
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    return !!(nextState !== this.state);
-  }
-
-  _filterMenu(item) {
-    let ret = item;
-    configs.routers.some((m) => {
-      if (item === m.key) {
-        ret = m.link;
-        return true;
-      }
-      return false;
-    });
-    return ret;
-  }
-
-  filterMenu(modules) {
-    modules.forEach((m) => {
-      m.items = m.items.filter((i) => {
-        let b = configs.routers.some((n) => {
-          if (n.key === i) {
-            return true;
-          }
-          return false;
-        });
-        let h = configs.hidden ? configs.hidden.some((hide) => {
-          if (hide === i) {
-            return true;
-          }
-          return false;
-        }) : null;
-        return !b && !h;
-      });
-    });
-    return modules;
-  }
-
-  getMenus() {
-    let menus = {};
-    menus.defaultOpenKeys = configs.default_openKeys;
-    menus.defaultSelectedKeys = [this.state.currentModule];
-    menus.modules = this.filterMenu(configs.modules);
-    return menus;
-  }
-
-  toggleMenu() {
-    this.setState({
-      collapsed: !this.state.collapsed
-    });
-  }
 
   render() {
     const modules = loader.modules;
-    const menus = this.getMenus();
-    const __ = this.props.__;
-    const GAREN = window.GAREN;
-    const rgwStatus = ['uninitialized', 'initializing', 'error'];
-    const rgwNeedInit = rgwStatus.indexOf(GAREN.rgw.status) !== -1;
-    const initModules = ['storage_user', 'storage_bucket', 's3_gateway', 'data_policy'];
-    const iscsiModules = ['iscsi_mgmt', 'client_group', 'iscsi_gateway'];
-    const iscsiNotInitialized = GAREN.rbd !== 'initialized';
+    const menus = this.state;
+
     return (
       <div id="wrapper">
         <div className="main-content">
@@ -110,16 +35,8 @@ class Model extends React.Component {
               <Switch>
                 {
                   Object.keys(modules).map((m, i) => {
-                    let M;
-                    const isRgwModule = initModules.indexOf(m) > -1;
-                    if(rgwNeedInit && isRgwModule) {
-                      M = modules['initialize_pool'];
-                    } else if(iscsiNotInitialized && iscsiModules.indexOf(m) > -1) {
-                      M = modules['iscsi_not_initialized'];
-                    } else {
-                      M = modules[m];
-                    }
-                    return <Route key={i} path={`/${m}`} children={() => <M __={__} collapsed={this.state.collapsed} />} />;
+                    const M = modules[m];
+                    return <Route key={i} path={`/${m}`} component={M} />;
                   })
                 }
                 <Redirect to={Object.keys(modules)[0]} />

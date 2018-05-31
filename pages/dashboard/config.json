@@ -4,44 +4,9 @@
       "overview"
     ]
   }, {
-    "title": "block-storage",
+    "title": "basic",
     "items": [
-      "block_mgmt",
-      "snapshot_mgmt",
-      "iscsi_mgmt",
-      "client_group",
-      "iscsi_gateway",
-      "iscsi_not_initialized"
-    ]
-  }, {
-    "title": "object-storage",
-    "items": [
-      "storage_user",
-      "storage_bucket",
-      "s3_gateway",
-      "initialize_pool",
-      "data_policy"
-    ]
-  }, {
-    "title": "cluster_management",
-    "items": [
-      "pool",
-      "pool_monitoring",
-      "osd_mgmt",
-      "osd_monitoring",
-      "cluster_topology"
-    ]
-  }, {
-    "title": "baremetal_management",
-    "items": [
-      "server",
-      "disk"
-    ]
-  }, {
-    "title": "alert_management",
-    "items": [
-      "alert_history",
-      "alert_silence"
+      "input"
     ]
   }],
   "default_module": "overview"

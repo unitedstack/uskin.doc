@@ -9,25 +9,17 @@ const os = require('os');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const lessToJs = require('less-var-parse');
-const manifestJson = require('./manifest.json');
-
-let language = process.env.npm_config_lang || process.env.language;
-
-// Default language
-if (!language) {
-  language = 'zh-CN';
-}
 
 let entry = {};
-fs.readdirSync('./applications')
+fs.readdirSync('../pages')
   .filter(function(m) {
-    return fs.statSync(path.join('./applications', m)).isDirectory();
+    return fs.statSync(path.join('../pages', m)).isDirectory();
   })
   .forEach(function(m) {
-    entry[m] = ['babel-polyfill', './applications/' + m + '/index.jsx'];
+    entry[m] = ['babel-polyfill', '../pages/' + m + '/index.jsx'];
   });
 
-let themer = lessToJs(fs.readFileSync(path.join(__dirname, './theme/index.less'), 'utf8'));
+let themer = lessToJs(fs.readFileSync(path.join(__dirname, '../theme/index.less'), 'utf8'));
 
 module.exports = {
 
@@ -38,16 +30,16 @@ module.exports = {
   entry: entry,
 
   output: {
-    path: path.resolve(__dirname, './public/dist'),
-    filename: '[hash:6].' + language + '.[name].min.js',
-    publicPath: '/public/dist',
-    chunkFilename: '[hash:6].' + language + '.[id].bundle.js'
+    path: path.resolve(__dirname, '../static'),
+    filename: '[hash:6].[name].min.js',
+    publicPath: '/static',
+    chunkFilename: '[hash:6].[id].bundle.js'
   },
 
   module: {
     rules: [{
       test: /\.jsx?$/,
-      exclude: /node_modules|moment|ufec/,
+      exclude: /node_modules/,
       use: {
         loader: 'babel-loader'
       }
@@ -115,23 +107,19 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[hash:6].[name].min.css',
       chunkFilename: '[id].css'
-    }),
-    new webpack.DllReferencePlugin({
-      context: path.join(__dirname, '..'),
-      manifest: manifestJson
     })
   ],
 
   resolve: {
     extensions: ['.jsx', '.js', 'json'],
     modules: [
-      path.resolve(__dirname, '../'),
+      path.resolve(__dirname, '..'),
       'node_modules'
     ],
     alias: {
       'react': 'node_modules/react',
       'react-dom': 'node_modules/react-dom',
-      'moment': 'client/libs/moment'
+      'react-router-dom': 'node_modules/react-router-dom'
     }
   }
 };
