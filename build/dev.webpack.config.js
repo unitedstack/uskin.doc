@@ -118,6 +118,7 @@ let webpackConfig = {
     compress: true,
     port: 8888,
     inline: true,
+    historyApiFallback: true,
     stats: {
       assets: true,
       chunks: false,

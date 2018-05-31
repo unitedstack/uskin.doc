@@ -8,8 +8,6 @@ configs.modules.forEach((m) => {
   });
 });
 
-console.log(configs);
-
 module.exports = {
   configs: configs,
   modules: modules

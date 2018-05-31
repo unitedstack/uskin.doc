@@ -1,0 +1,3 @@
+[submodule "uskin"]
+	path = uskin
+	url = git@github.com:unitedstack/uskin.git
