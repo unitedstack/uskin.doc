@@ -74,10 +74,7 @@ let webpackConfig = {
           name: '/fonts/[hash:8].icon.[ext]'
         }
       }
-    }],
-    noParse: [
-      /moment/g
-    ]
+    }]
   },
 
   // only show valid/invalid and errors
@@ -128,7 +125,7 @@ let webpackConfig = {
 
 const pluginHtmls = entrys.map(id => new HtmlWebpackPlugin({
   chunks: ["common", id],
-  filename: id + ".html",
+  filename: (id === 'home' ? 'index' : id) + ".html",
   inject: true,
   template: path.resolve(__dirname, '../public/index.html')
 }));

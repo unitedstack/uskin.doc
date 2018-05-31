@@ -6,23 +6,22 @@ const fs = require('fs');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 const lessToJs = require('less-var-parse');
-const manifestJson = require('./manifest.json');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-
-// show webpack bundle analyze
-const showMeMore = process.env.npm_config_showmemore;
+const entrys = require('./entry');
 
 let entry = {};
-fs.readdirSync('./applications')
+
+entrys
   .filter(function(m) {
-    return fs.statSync(path.join('./applications', m)).isDirectory();
+    return fs.statSync(path.join('../pages', m)).isDirectory();
   })
   .forEach(function(m) {
-    entry[m] = ['babel-polyfill', './applications/' + m + '/index.jsx'];
+    entry[m] = ['babel-polyfill', '../pages/' + m + '/index.jsx'];
   });
 
-let themer = lessToJs(fs.readFileSync(path.join(__dirname, './theme/index.less'), 'utf8'));
+let themer = lessToJs(fs.readFileSync(path.join(__dirname, '../theme/index.less'), 'utf8'));
 
 let webpackConfig = {
 
@@ -33,20 +32,17 @@ let webpackConfig = {
   entry: entry,
 
   output: {
-    path: path.resolve(__dirname, 'public/dist'),
-    filename: '[name].min.js',
-    publicPath: '/public/dist'
+    path: path.resolve(__dirname, '../static'),
+    filename: '[hash:6].[name].min.js',
+    publicPath: '/static/'
   },
 
   module: {
     rules: [{
       test: /\.jsx?$/,
-      exclude: /node_modules|moment|ufec/,
+      exclude: /node_modules/,
       use: {
-        loader: 'babel-loader',
-        options: {
-          cacheDirectory: true
-        }
+        loader: 'babel-loader'
       }
     }, {
       test: /\.less|css$/,
@@ -70,68 +66,64 @@ let webpackConfig = {
       ]
     }, {
       test: /\.(woff|svg|eot|ttf|otf)\??.*$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            limit: 1000,
-            name: '/fonts/[hash:8].icon.[ext]'
-          }
+      use: {
+        loader: 'file-loader',
+        options: {
+          limit: 1000,
+          name: '/fonts/[hash:8].icon.[ext]'
         }
-      ]
-    }],
-    noParse: [
-      /moment/g
-    ]
-  },
-
-  // only show valid/invalid and errors
-  // deal with verbose output
-  stats: {
-    assets: true,
-    colors: true,
-    warnings: true,
-    errors: true,
-    errorDetails: true,
-    entrypoints: true,
-    version: true,
-    hash: false,
-    timings: true,
-    chunks: false,
-    chunkModules: false,
-    children: false
+      }
+    }]
   },
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].min.css'
+      filename: '[hash:6].[name].min.css',
+      chunkFilename: '[id].css'
     }),
-    new webpack.DllReferencePlugin({
-      context: path.join(__dirname, '..'),
-      manifest: manifestJson
-    })
+    new WriteFilePlugin()
   ],
 
   resolve: {
     extensions: ['.jsx', '.js', 'json'],
     modules: [
-      path.resolve(__dirname, '../'),
+      path.resolve(__dirname, '..'),
       'node_modules'
     ],
     alias: {
       'react': 'node_modules/react',
       'react-dom': 'node_modules/react-dom',
-      'moment': 'client/libs/moment'
+      'react-router-dom': 'node_modules/react-router-dom'
     }
   },
 
-  devtool: 'cheap-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, '../static'),
+    compress: true,
+    port: 8888,
+    inline: true,
+    stats: {
+      assets: true,
+      chunks: false,
+      chunkModules: false,
+      chunkOrign: false,
+      modules: false,
+      moduleTrace: false,
+      reasons: false,
+      source: false
+    }
+  },
 
-  watch: true
+  devtool: 'cheap-source-map'
 };
 
-if(showMeMore) {
-  webpackConfig.plugins.push(new BundleAnalyzerPlugin());
-}
+const pluginHtmls = entrys.map(id => new HtmlWebpackPlugin({
+  chunks: ["common", id],
+  filename: (id === 'home' ? 'index' : id) + ".html",
+  inject: true,
+  template: path.resolve(__dirname, '../public/index.html')
+}));
+
+webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
 
 module.exports = webpackConfig;

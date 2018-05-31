@@ -4,6 +4,7 @@
   "description": "USkin document.",
   "main": "index.js",
   "scripts": {
+    "dev": "rm -rf static/* && cd build && webpack-dev-server --config dev.webpack.config.js",
     "build": "rm -rf static/* && cd build && webpack"
   },
   "repository": {
@@ -38,7 +39,9 @@
     "postcss-loader": "^2.1.5",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.10.2",
-    "webpack-cli": "^2.1.4"
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4",
+    "write-file-webpack-plugin": "^4.3.2"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
