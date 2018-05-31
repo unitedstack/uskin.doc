@@ -137,7 +137,8 @@ let webpackConfig = {
     alias: {
       'react': 'node_modules/react',
       'react-dom': 'node_modules/react-dom',
-      'react-router-dom': 'node_modules/react-router-dom'
+      'react-router-dom': 'node_modules/react-router-dom',
+      'uskin': 'uskin/index'
     }
   }
 };

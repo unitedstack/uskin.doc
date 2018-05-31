@@ -11,7 +11,7 @@ class Model extends React.Component {
   render() {
     return (
       <div style={{fontSize: 50}}>
-        这边儿是组件
+        这边儿是组件Table哈哈哈
       </div>
     );
   }

@@ -6,7 +6,7 @@
   }, {
     "title": "basic",
     "items": [
-      "input"
+      "table"
     ]
   }],
   "default_module": "input"

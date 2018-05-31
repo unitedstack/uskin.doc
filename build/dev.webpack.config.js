@@ -70,9 +70,18 @@ let webpackConfig = {
         loader: 'file-loader',
         options: {
           limit: 1000,
-          name: '/fonts/[hash:8].icon.[ext]'
+          name: './fonts/[hash:8].icon.[ext]'
         }
       }
+    }, {
+      test: /\.(jpe?g|png|gif)$/i,
+      use: [{
+        loader: 'url-loader',
+        options: {
+          limit: 2000,
+          name: './img/[hash:8].[name].[ext]'
+        }
+      }]
     }]
   },
 
@@ -109,7 +118,8 @@ let webpackConfig = {
     alias: {
       'react': 'node_modules/react',
       'react-dom': 'node_modules/react-dom',
-      'react-router-dom': 'node_modules/react-router-dom'
+      'react-router-dom': 'node_modules/react-router-dom',
+      'uskin': 'uskin/index'
     }
   },
 

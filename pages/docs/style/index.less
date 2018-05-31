@@ -1,10 +1,22 @@
-@import "./layout.less";
+@import '../../../uskin/css/uskin.less';
 
-#main {
-  display: flex;
-  flex: 1;
-}
-
-* {
-  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Monospaced Number", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB" !important;
+#app {
+  width: 100%;
+  .wrapper {
+    width: 100%;
+    .navbar {
+      width: 100%;
+      height: 60px;
+      background-color: #1D2E3B;
+    }
+    .content {
+      margin-top: 20px;
+      display: flex;
+      #main {
+        flex: 1;
+        padding: 0 30px;
+        box-sizing: border-box;
+      }
+    }
+  }
 }
