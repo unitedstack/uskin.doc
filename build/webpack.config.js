@@ -10,9 +10,11 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const lessToJs = require('less-var-parse');
+const entrys = require('./entry');
 
 let entry = {};
-fs.readdirSync('../pages')
+
+entrys
   .filter(function(m) {
     return fs.statSync(path.join('../pages', m)).isDirectory();
   })
@@ -22,7 +24,7 @@ fs.readdirSync('../pages')
 
 let themer = lessToJs(fs.readFileSync(path.join(__dirname, '../theme/index.less'), 'utf8'));
 
-module.exports = {
+let webpackConfig = {
 
   mode: 'production',
 
@@ -33,8 +35,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../static'),
     filename: '[hash:6].[name].min.js',
-    publicPath: '/static',
-    chunkFilename: '[hash:6].[id].bundle.js'
+    publicPath: '.'
   },
 
   module: {
@@ -108,10 +109,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[hash:6].[name].min.css',
       chunkFilename: '[id].css'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Custom template',
-      template: path.resolve(__dirname, '../public/index.html')
     })
   ],
 
@@ -128,3 +125,14 @@ module.exports = {
     }
   }
 };
+
+const pluginHtmls = entrys.map(id => new HtmlWebpackPlugin({
+  chunks: ["common", id],
+  filename: id + ".html",
+  inject: true,
+  template: path.resolve(__dirname, '../public/index.html')
+}));
+
+webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
+
+module.exports = webpackConfig;

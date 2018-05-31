@@ -1,5 +1,5 @@
 const fs = require('fs');
 
-const arr = fs.readdirSync('../pages');
+const entry = fs.readdirSync('../pages');
 
-console.log(arr);
+module.exports = entry;

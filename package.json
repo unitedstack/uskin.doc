@@ -4,7 +4,7 @@
   "description": "USkin document.",
   "main": "index.js",
   "scripts": {
-    "build": "cd build && webpack"
+    "build": "rm -rf static/* && cd build && webpack"
   },
   "repository": {
     "type": "git",
