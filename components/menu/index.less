@@ -1,0 +1,102 @@
+@color_common: #11AFE6;
+.side-bar-wrapper{
+  font-family: MicrosoftYaHei;
+  border-right: 1px solid #EDEDED;
+  width: 240px;
+  .title{
+    position: relative;
+    padding-left: 40px;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #1D2E3B;
+    letter-spacing: 1.14px;
+    cursor: default;
+    .operator{
+      position: absolute;
+      top: 17px;
+      right: 32px;
+      width: 7px;
+      height: 7px;
+      border-left: 1px solid #1D2E3B;
+      border-bottom: 1px solid #1D2E3B;
+      transform: rotate(135deg);
+      cursor: pointer;
+      &.closed{
+        top: 12px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  ul{
+    user-select: none;
+    width: 100%;
+    li{
+      position: relative;
+      padding-left: 60px;
+      width: 240px;
+      height: 40px;
+      box-sizing: border-box;
+      line-height: 40px;
+      font-size: 12px;
+      cursor: pointer;
+      a{
+        color: #000;
+      }
+      .en{
+        margin-right: 8px;
+      }
+      .inner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 237px;
+        height: 40px;
+        border-right: 3px solid transparent;
+      }
+      &.selected{
+        color: @color_common;
+        a{
+          color: @color_common;
+        }
+        &:after{
+          content: '';
+          width: 3px;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          background: @color_common;
+        }
+        .inner{
+          background-color: @color_common;
+          opacity: .1;
+          border-right-color:@color_common;
+        }
+      }
+      &:hover{
+        color: @color_common;
+        a{
+        color:@color_common
+        }
+        &:after{
+          content: '';
+          width: 3px;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          background: @color_common;
+        }
+        .inner{
+          background-color: @color_common;
+          opacity: .1;
+          border-right-color:@color_common;
+        }
+      }
+    }
+  }
+}
