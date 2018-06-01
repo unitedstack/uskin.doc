@@ -1,6 +1,5 @@
-import './style/index.less';
-
 import React from 'react';
+import './style/index.less';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -8,10 +7,6 @@ class NavBar extends React.Component {
   }
 
   state = {
-    collapsed: this.props.collapsed,
-    visible: false,
-    totalAlertCount: 0,
-    alertList: {}
   };
 
   componentDidMount() {

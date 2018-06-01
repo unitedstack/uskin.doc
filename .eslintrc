@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "babel"
+  ],
+  "globals": {
+    "hljs": false
+  },
+  "rules": {
+    "indent": [2, 2, {"SwitchCase": 1, "ignoredNodes": ["ConditionalExpression"]}],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-param-reassign": 0,
+    "prefer-destructuring": 0,
+    "global-require": 0,
+    "no-useless-constructor": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "react/no-array-index-key": 0,
+    "react/no-danger": 0,
+    "jsx-a11y/anchor-is-valid": 0
+  }
+}

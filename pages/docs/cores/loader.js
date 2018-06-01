@@ -1,14 +1,14 @@
 const configs = require('../menu.json');
 
-let modules = {};
+const modules = {};
 
 configs.modules.forEach((m) => {
   m.items.forEach((n) => {
-    modules[n] = require('../modules/' + n + '/index');
+    modules[n] = require(`../modules/${n}/index`);
   });
 });
 
 module.exports = {
-  configs: configs,
-  modules: modules
+  configs,
+  modules,
 };
