@@ -72,6 +72,16 @@ let webpackConfig = {
         }
       ]
     }, {
+      test: /\.md$/,
+      use: [
+        {
+          loader: "html-loader"
+        },
+        {
+          loader: "markdown-loader"
+        }
+      ]
+    }, {
       test: /\.(woff|svg|eot|ttf|otf)\??.*$/,
       use: {
         loader: 'file-loader',
@@ -80,6 +90,15 @@ let webpackConfig = {
           name: '/fonts/[hash:8].icon.[ext]'
         }
       }
+    }, {
+      test: /\.(jpe?g|png|gif)$/i,
+      use: [{
+        loader: 'url-loader',
+        options: {
+          limit: 2000,
+          name: './img/[hash:8].[name].[ext]'
+        }
+      }]
     }]
   },
 
