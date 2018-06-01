@@ -1,5 +1,4 @@
 import './style/index.less';
-import '../../highlight/styles/default.css';
 
 import ReactDOM from 'react-dom';
 import React from 'react';

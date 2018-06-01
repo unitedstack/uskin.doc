@@ -158,7 +158,7 @@ const pluginHtmls = entrys.map(id => new HtmlWebpackPlugin({
   chunks: ['dll', id],
   filename: (id === 'home' ? 'index' : id) + ".html",
   inject: true,
-  template: path.resolve(__dirname, '../public/index.html')
+  template: path.resolve(__dirname, `../public/${id === 'docs' ? 'docs' : 'index'}.html`)
 }));
 
 webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
