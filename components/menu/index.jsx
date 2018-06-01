@@ -16,10 +16,6 @@ class Menu extends React.Component {
     });
   }
 
-  onClick = () => {
-    // this.props.onAction && this.props.onAction('menu', data);
-  }
-
   render() {
     return (
       <div className="side-bar-wrapper">

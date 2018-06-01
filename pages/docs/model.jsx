@@ -43,6 +43,7 @@ class Model extends React.Component {
       default: break;
     }
   }
+
   handleMenu(data) {
     const menus = JSON.parse(JSON.stringify(this.state.menus));
     switch (data.subType) {
@@ -74,6 +75,7 @@ class Model extends React.Component {
       menus,
     });
   }
+
   render() {
     const modules = loader.modules;
     const state = this.state;
