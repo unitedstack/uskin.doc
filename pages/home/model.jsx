@@ -7,7 +7,7 @@ class Model extends Component{
 
   render(){
     return (
-      <h1>This is Home Page!</h1>
+      <h1>This is Home Page! <a href="docs.html">组件页</a></h1>
     );
   }
 }
