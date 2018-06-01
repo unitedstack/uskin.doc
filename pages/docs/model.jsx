@@ -31,7 +31,6 @@ class Model extends React.Component {
             {
               Object.keys(modules).map((m, i) => {
                 let M = modules[m];
-                console.log(M);
                 return <Route key={i} path={`/${m}`} component={M} />;
               })
             }
