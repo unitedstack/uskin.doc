@@ -2,37 +2,15 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Navbar from 'components/navbar/index';
 import Menu from 'components/menu/index';
-import SideMenu from './sidemenu';
 
 const loader = require('./cores/loader');
-// const configs = loader.configs;
-
 
 class Model extends React.Component {
   constructor(props) {
     super(props);
-  }
-
-  state = {
-    menus: {
-      items: [{
-        title: 'modules',
-        hide: false,
-        subs: [{
-          subtitle: 'Breadcrumb',
-          subtitleCn: '面包屑',
-        }, {
-          subtitle: 'Button',
-          subtitleCn: '按钮',
-        }, {
-          subtitle: 'Button Group',
-          subtitleCn: '按钮组',
-        }, {
-          subtitle: 'input',
-          subtitleCn: '输入框',
-        }],
-      }],
-    },
+    this.state = {
+      menus: loader.configs,
+    };
   }
 
   onAction = (type, data) => {
@@ -85,11 +63,8 @@ class Model extends React.Component {
         <div className="navbar">
           <Navbar />
         </div>
-        <Menu {...state.menus} onAction={this.onAction} />
         <div className="content">
-          <div className="sidemenu-wrapper">
-            <SideMenu />
-          </div>
+          <Menu {...state.menus} onAction={this.onAction} />
           <div id="main">
             <Switch>
               {

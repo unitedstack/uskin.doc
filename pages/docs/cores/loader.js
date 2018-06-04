@@ -2,9 +2,9 @@ const configs = require('../menu.json');
 
 const modules = {};
 
-configs.modules.forEach((m) => {
-  m.items.forEach((n) => {
-    modules[n] = require(`../modules/${n}/index`);
+configs.items.forEach((m) => {
+  m.subs.forEach((n) => {
+    modules[n.key] = require(`../modules/${n.key}/index`);
   });
 });
 

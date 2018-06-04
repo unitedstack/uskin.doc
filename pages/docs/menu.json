@@ -1,13 +1,20 @@
 {
-  "modules": [{
-    "items": [
-      "input"
-    ]
-  }, {
-    "title": "basic",
-    "items": [
-      "table"
-    ]
-  }],
-  "default_module": "input"
+  "default": {
+    "title": "Components",
+    "subtitle": "input"
+  },
+  "items":[
+    {
+      "title": "Components",
+      "key": "Components",
+      "hide": false,
+      "subs":[
+        {
+          "subtitle": "input",
+          "subtitleCn": "输入框",
+          "key": "input"
+        }
+      ]
+    }
+  ]
 }
