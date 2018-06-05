@@ -13,6 +13,31 @@
     .content {
       margin-top: 20px;
       display: flex;
+      .simple-description-wrapper, .API-wrapper, .project-wrapper{
+        margin-bottom: 60px;
+        .content-title{
+          margin-bottom: 20px;
+          font-size: 24px;
+          color: #1D2E3B;
+          span{
+            margin-right: 12px;
+          }
+        }
+      }
+      .simple-description-wrapper{
+        .content{
+          font-size: 14px;
+          color: #314659;
+        }
+      }
+      .API-wrapper, .project-wrapper{
+        .table .table-header{
+          border-radius: 2px 2px 0 0;
+          div{
+            background-color: #F6F6F6;
+          }
+        }
+      }
       #main {
         flex: 1;
         padding: 0 30px;
