@@ -1,7 +1,7 @@
 {
   "default": {
     "title": "Components",
-    "subtitle": "input"
+    "subtitle": "button"
   },
   "items":[
     {
@@ -10,9 +10,34 @@
       "hide": false,
       "subs":[
         {
-          "subtitle": "input",
-          "subtitleCn": "输入框",
-          "key": "input"
+          "subtitle": "button",
+          "subtitleCn": "按钮",
+          "key": "button"
+        },
+        {
+          "subtitle": "button Group",
+          "subtitleCn": "按钮组",
+          "key": "button-group"
+        },
+        {
+          "subtitle": "Dropdown",
+          "subtitleCn": "下拉按钮",
+          "key": "dropdown"
+        },
+        {
+          "subtitle": "Dropdown Button",
+          "subtitleCn": "下拉按钮",
+          "key": "dropdown-button"
+        },
+        {
+          "subtitle": "menu",
+          "subtitleCn": "菜单",
+          "key": "menu"
+        },
+        {
+          "subtitle": "notification",
+          "subtitleCn": "通知",
+          "key": "notification"
         }
       ]
     }

@@ -1,0 +1,84 @@
+{
+  "title": "Button",
+  "title_cn": "按钮",
+  "simple_description": "按钮用于开始一个即时操作。",
+  "data": {
+    "type": {
+      "demo":{
+        "data":[{
+          "type": "button",
+          "config":{
+            "value": "create",
+            "type": "create"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "default"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "warning",
+            "type": "warning"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "delete",
+            "type": "delete"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "cancel",
+            "type": "cancel"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "按钮有4种类型：创建按钮、警告按钮、删除按钮、取消按钮。"
+      }
+    },"size": {
+      "demo":{
+        "data":[{
+          "type": "button",
+          "config":{
+            "value": "xs",
+            "size": "xs"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "sm",
+            "size": "sm"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "initial",
+            "initial": true
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "lg",
+            "size": "lg"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "xl",
+            "size": "xl"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "按钮有5种大小：xs、sm、initial( 根据文字自适应大小 )、lg、xl。"
+      }
+    }
+  }
+
+}

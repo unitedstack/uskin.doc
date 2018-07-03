@@ -32,13 +32,15 @@ class Base extends React.Component {
     const state = this.state;
     return (
       <div className="base-container">
-        <div className="title">基础用法</div>
         <Demo {...state.demo} />
         <Description
           {...state.description}
           onAction={(field, data) => this.onAction(field, data)}
         />
-        <div style={{ display: state.hide ? 'none' : 'block' }} dangerouslySetInnerHTML={{ __html: props.code }} />
+         <div
+          style={{ display: state.hide ? 'none' : 'block' }}
+          dangerouslySetInnerHTML={{ __html: props.code }}
+        />
       </div>
     );
   }
