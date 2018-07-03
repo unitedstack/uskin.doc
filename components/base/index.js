@@ -37,7 +37,7 @@ class Base extends React.Component {
           {...state.description}
           onAction={(field, data) => this.onAction(field, data)}
         />
-        <div
+         <div
           style={{ display: state.hide ? 'none' : 'block' }}
           dangerouslySetInnerHTML={{ __html: props.code }}
         />

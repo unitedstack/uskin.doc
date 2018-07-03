@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "rm -rf static/* && cd build && webpack-dev-server --config dev.webpack.config.js",
     "build": "rm -rf static/* && cd build && webpack",
-    "eslint": "eslint *.js pages/ components/ --ext .js,.jsx --cache"
+    "eslint": "eslint *.js pages/ components/ --ext .js,.jsx --cache",
+    "init-deploy": "rm -rf static/ && mkdir static && ./scripts/init-deploy.sh",
+    "deploy": "./scripts/deploy.sh"
   },
   "pre-commit": [
     "eslint"
