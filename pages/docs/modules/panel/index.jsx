@@ -4,7 +4,7 @@ import Base from 'components/base/index';
 import './style/index.less';
 import highlight from '../../cores/highlight';
 import config from './config.json';
-import dropdownButton from './dropdown-button.md';
+import panel from './panel.md';
 
 const column = [{
   title: '属性',
@@ -31,29 +31,23 @@ const column = [{
 }];
 
 const data = [{
-  property: 'buttonData',
-  explain: '配置按钮的值和图标类',
-  type: 'Object',
+  property: 'title',
+  explain: '设置面板的标题',
+  type: 'String',
   defaultValue: '-',
   id: '1',
 }, {
-  property: 'dropdownItems',
-  explain: '对象数组包含下拉菜单项的文本内容和键',
-  type: 'Array',
+  property: 'content',
+  explain: '设置面板的内容',
+  type: 'String',
   defaultValue: '-',
   id: '2',
 }, {
-  property: 'dropdownOnClick',
-  explain: '单击下拉按钮中的任何项目的处理程序。',
-  type: 'Function',
+  property: 'width',
+  explain: '设置面板的宽度',
+  type: 'String',
   defaultValue: '-',
   id: '3',
-}, {
-  property: 'disabled',
-  explain: '设置按钮是否可以单击',
-  type: 'Boolean',
-  defaultValue: 'false',
-  id: '4',
 }];
 
 class Model extends React.Component {
@@ -65,7 +59,7 @@ class Model extends React.Component {
 
   render() {
     return (
-      <div className="intro-dropdown-btn-wrapper">
+      <div className="intro-panel-wrapper">
         <div className="simple-description-wrapper">
           <div className="content-title">
             <span>{config.title}</span>
@@ -79,9 +73,9 @@ class Model extends React.Component {
           <div className="title">基础用法</div>
           <div className="base-container-wrapper">
             <Base
-              demo={config.data.dropbutton.show}
-              description={config.data.dropbutton.description}
-              code={dropdownButton}
+              demo={config.data.panel.show}
+              description={config.data.panel.description}
+              code={panel}
             />
           </div>
         </div>

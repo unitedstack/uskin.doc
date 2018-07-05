@@ -4,7 +4,8 @@ import Base from 'components/base/index';
 import './style/index.less';
 import highlight from '../../cores/highlight';
 import config from './config.json';
-import mdTest from './test.md';
+import dropdownone from './dropdown-one.md';
+import dropdowntwo from './dropdown-two.md';
 
 const column = [{
   title: '属性',
@@ -31,36 +32,47 @@ const column = [{
 }];
 
 const data = [{
-  property: 'type',
-  explain: '设置按钮类型',
+  property: 'title',
+  explain: '设置下拉菜单项的名称',
   type: 'String',
   defaultValue: '-',
   id: '1',
 }, {
   property: 'disabled',
-  explain: '设置按钮是否有效',
+  explain: '设置链接是否可以单击',
   type: 'Boolean',
   defaultValue: 'false',
   id: '2',
 }, {
-  property: 'initial',
-  explain: 'Put value "true" to set the button to initial styled.',
+  property: 'danger',
+  explain: '将链接设置为危险的“true”以得到红色警告背景色。',
   type: 'Boolean',
   defaultValue: 'false',
   id: '3',
+}, {
+  property: 'items',
+  explain: '在特定的分类标题下配置菜单项',
+  type: 'Array',
+  defaultValue: '-',
+  id: '4',
+}, {
+  property: 'onClick',
+  explain: '点击事件的处理',
+  type: 'Function',
+  defaultValue: '-',
+  id: '5',
 }];
 
 class Model extends React.Component {
   constructor(props) {
     super(props);
-    config.code = mdTest;
   }
 
   componentDidMount = highlight;
 
   render() {
     return (
-      <div className="intro-button-wrapper">
+      <div className="intro-dropdown-wrapper">
         <div className="simple-description-wrapper">
           <div className="content-title">
             <span>{config.title}</span>
@@ -70,7 +82,21 @@ class Model extends React.Component {
             {config.simple_description}
           </div>
         </div>
-        <Base {...config} />
+        <div className="base-wrapper">
+          <div className="title">基础用法</div>
+          <div className="base-container-wrapper">
+            <Base
+              demo={config.data.dropone.show}
+              description={config.data.dropone.description}
+              code={dropdownone}
+            />
+            <Base
+              demo={config.data.droptwo.show}
+              description={config.data.droptwo.description}
+              code={dropdowntwo}
+            />
+          </div>
+        </div>
         <div className="API-wrapper">
           <div className="content-title">API</div>
           <div>
@@ -78,20 +104,6 @@ class Model extends React.Component {
               width="90%"
               column={column}
               data={data}
-              dataKey="id"
-              checkbox={false}
-              striped={false}
-              hover={false}
-            />
-          </div>
-        </div>
-        <div className="project-wrapper">
-          <div className="content-title">项目</div>
-          <div>
-            <Table
-              width="90%"
-              column={column}
-              data={[]}
               dataKey="id"
               checkbox={false}
               striped={false}
