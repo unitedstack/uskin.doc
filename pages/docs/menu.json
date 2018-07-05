@@ -58,6 +58,21 @@
           "subtitle": "table",
           "subtitleCn": "表格",
           "key": "table"
+        },
+        {
+          "subtitle": "breadcrumb",
+          "subtitleCn": "面包屑",
+          "key": "breadcrumb"
+        },
+        {
+          "subtitle": "tip",
+          "subtitleCn": "提示框",
+          "key": "tip"
+        },
+        {
+          "subtitle": "calendar",
+          "subtitleCn": "日历",
+          "key": "calendar"
         }
       ]
     }
