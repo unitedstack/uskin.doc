@@ -1,0 +1,106 @@
+{
+  "title": "Tab",
+  "title_cn": "标签页",
+  "simple_description": "单击选项卡切换页面内容。",
+  "data": {
+    "default": {
+      "demo":{
+        "data":[{
+          "type": "tab",
+          "config":{
+            "items": [{
+              "name": "Word",
+              "key": "0"
+            }, {
+              "name": "Excel",
+              "key": "1",
+              "default": true
+            }, {
+              "name": "PowerPoint",
+              "key": "2"
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "将items设置为每个选项卡的配置，设置default=true, 初始化选中当前选项卡。"
+      }
+    },
+    "type": {
+      "demo":{
+        "data":[{
+          "type": "tab",
+          "config":{
+            "type": "sm",
+            "items": [{
+              "name": "Piano",
+              "key": "0"
+            }, {
+              "name": "Violin",
+              "key": "1",
+              "default": true
+            }, {
+              "name": "Guitar",
+              "key": "2"
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "将属性type设置为'sm', 以获得小尺寸的选项卡"
+      }
+    },
+    "href": {
+      "demo":{
+        "data":[{
+          "type": "tab",
+          "config":{
+            "items": [{
+              "name": "Uskin",
+              "key": "0",
+              "href": "https://github.com/icecreamliker/uskin"
+            }, {
+              "name": "Table",
+              "key": "1",
+              "default": true
+            }, {
+              "name": "Slider",
+              "key": "2"
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "设置href属性，以单击一个标签作为链接"
+      }
+    },
+    "disabled": {
+      "demo":{
+        "data":[{
+          "type": "tab",
+          "config":{
+            "items": [{
+              "name": "Uskin",
+              "key": "0"
+            }, {
+              "name": "Table",
+              "key": "1",
+              "default": true
+            }, {
+              "name": "Slider",
+              "key": "2",
+              "disabled": true
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "设置disabled:true, 使其无法单击选项卡"
+      }
+    }
+  }
+}
