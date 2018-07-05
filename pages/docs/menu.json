@@ -21,13 +21,18 @@
         },
         {
           "subtitle": "Dropdown",
-          "subtitleCn": "下拉按钮",
+          "subtitleCn": "下拉菜单",
           "key": "dropdown"
         },
         {
           "subtitle": "Dropdown Button",
           "subtitleCn": "下拉按钮",
           "key": "dropdown-button"
+        },
+        {
+          "subtitle": "Panel",
+          "subtitleCn": "面板",
+          "key": "panel"
         },
         {
           "subtitle": "menu",

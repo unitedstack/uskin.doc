@@ -11,6 +11,7 @@ class Demo extends React.Component {
     arr[0] = arr[0].toUpperCase();
     type = arr.join('');
     const Sub = uskin[type];
+
     return (<Sub key={index} {...props.config} />);
   }
   render() {

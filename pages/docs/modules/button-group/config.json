@@ -1,27 +1,5 @@
 {
-  "title": "input",
-  "title_cn": "输入框",
-  "simple_description": "简单描述简单描述简单描述简单描述简单描述简单描述简单描述简单描述简单描述。",
-  "demo":{
-    "data":[{
-      "type": "button",
-      "config":{
-        "value": "sm",
-        "type": "cancel",
-        "size": "sm"
-      }
-    },{
-      "type": "button",
-      "config":{
-        "value": "xl",
-        "type": "create",
-        "size": "xl"
-      }
-    }]
-  },
-  "description": {
-    "hide": true,
-    "content": "简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试"
-  },
-  "code": ""
+  "title": "ButtonGroup",
+  "title_cn": "按钮组",
+  "simple_description": "使用按钮组，水平或垂直对齐。"
 }

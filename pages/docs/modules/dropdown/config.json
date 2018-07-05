@@ -1,27 +1,133 @@
 {
-  "title": "input",
-  "title_cn": "输入框",
-  "simple_description": "简单描述简单描述简单描述简单描述简单描述简单描述简单描述简单描述简单描述。",
-  "demo":{
-    "data":[{
-      "type": "button",
-      "config":{
-        "value": "sm",
-        "type": "cancel",
-        "size": "sm"
+  "title": "DropDown",
+  "title_cn": "下拉菜单",
+  "simple_description": "垂直排列的菜单，通常用作下拉菜单。",
+  "data": {
+    "dropone": {
+      "show":{
+        "data":[{
+          "type": "Dropdown",
+          "config": {
+            "items": [{
+              "items": [{
+                "title": "Reboot",
+                "key": "0"
+               }, {
+                "title": "Take Image Snapshot",
+                "key": "1"
+               }]
+            }, {
+              "items": [{
+                "title": "Associate Public IP",
+                "key": "2"
+               }, {
+                "title": "Dissociate Public IP",
+                "key": "3"
+               }, {
+                "title": "Join Networks",
+                "key": "4"
+               }]
+            }, {
+              "items": [{
+                "title": "Change Security Group",
+                "key": "5"
+               }, {
+                "title": "Change Passoword",
+                "key": "6"
+               }, {
+                "title": "Change Keypair",
+                "key": "7"
+               }]
+            }, {
+              "items": [{
+                "title": "Add Volume",
+                "key": "8"
+               }, {
+                "title": "Remove Volume",
+                "disabled": true,
+                "key": "9"
+               }]
+            }, {
+              "items": [{
+                "title": "Termitate",
+                "danger": true,
+                "key": "10"
+               }]
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "在带有标题、键、禁用和onClick的数组项中配置对象。"
       }
-    },{
-      "type": "button",
-      "config":{
-        "value": "xl",
-        "type": "create",
-        "size": "xl"
+    },"droptwo": {
+      "show":{
+        "data":[{
+          "type": "Dropdown",
+          "config": {
+            "items": [{
+              "title": "Basic Ops",
+              "key": "basic",
+              "items": [{
+                "title": "Reboot",
+                "key": "0"
+               }, {
+                "title": "Take Image Snapshot",
+                "key": "1"
+               }]
+            }, {
+              "title": "Network Ops",
+              "key": "network",
+              "items": [{
+                "title": "Associate Public IP",
+                "key": "2"
+               }, {
+                "title": "Dissociate Public IP",
+                "key": "3"
+               }, {
+                "title": "Join Networks",
+                "key": "4"
+               }]
+            }, {
+              "items": [{
+                "title": "Change Security Group",
+                "key": "5"
+               }, {
+                "title": "Change Passoword",
+                "key": "6"
+               }, {
+                "title": "Change Keypair",
+                "key": "7"
+               }]
+            }, {
+              "title": "Volume Ops",
+              "key": "volume",
+              "items": [{
+                "title": "Add Volume",
+                "key": "8"
+               }, {
+                "title": "Remove Volume",
+                "disabled": true,
+                "key": "9"
+               }]
+            }, {
+              "title": "Dangerous Ops",
+              "key": "dangerous",
+              "items": [{
+                "title": "Termitate",
+                "danger": true,
+                "key": "10"
+               }]
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "在数组项中的每个对象中设置标题和键"
       }
-    }]
-  },
-  "description": {
-    "hide": true,
-    "content": "简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试简单测试"
-  },
-  "code": ""
+    }
+  }
+
 }

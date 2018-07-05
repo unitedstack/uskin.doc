@@ -6,7 +6,7 @@ import './style/index.less';
 class Base extends React.Component {
   constructor(props) {
     super(props);
-    const demo = JSON.parse(JSON.stringify(props.demo));
+    const demo = props.demo;
     const description = JSON.parse(JSON.stringify(props.description));
     this.state = {
       demo,
@@ -37,7 +37,7 @@ class Base extends React.Component {
           {...state.description}
           onAction={(field, data) => this.onAction(field, data)}
         />
-         <div
+        <div
           style={{ display: state.hide ? 'none' : 'block' }}
           dangerouslySetInnerHTML={{ __html: props.code }}
         />
