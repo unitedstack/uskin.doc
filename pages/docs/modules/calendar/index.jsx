@@ -4,7 +4,8 @@ import Base from 'components/base/index';
 import './style/index.less';
 import highlight from '../../cores/highlight';
 import config from './config.js';
-import menuDemo from './menu.md';
+import calendar1Demo from './calendar1.md';
+import calendar2Demo from './calendar2.md';
 
 const column = [{
   title: '属性',
@@ -31,76 +32,108 @@ const column = [{
 }];
 
 const apiData = [{
-  property: 'items（必填）',
-  explain: '面包屑内容',
-  type: 'Array',
+  property: 'page',
+  explain: '设置点开日历显示的年月,比如2018-02。设置selectedDate此项无效',
+  type: 'String',
   defaultValue: '-',
   id: '1',
 }, {
-  property: 'onClick',
-  explain: '点击二级i标题的回调函数，参数为事件对象和标题对象',
-  type: 'Function',
-  defaultValue: '() => {}',
+  property: 'selectedDate',
+  explain: '初始选中的日期，比如2018-07-06',
+  type: 'String',
+  defaultValue: '-',
   id: '2',
+}, {
+  property: 'placeholder',
+  explain: '站位符',
+  type: 'String',
+  defaultValue: '-',
+  id: '3',
+}, {
+  property: 'startWeek',
+  explain: '起始星期,0~6表示周日至周一',
+  type: 'Number',
+  defaultValue: '0',
+  id: '4',
+}, {
+  property: 'disabled',
+  explain: '进选日期，见下方详细说明',
+  type: 'Object',
+  defaultValue: '-',
+  id: '5',
+}, {
+  property: 'local',
+  explain: '星期、月份显示方式，见下方详细说明',
+  type: 'Object',
+  defaultValue: '-',
+  id: '6',
 }, {
   property: 'width',
-  explain: '导航菜单的宽度',
+  explain: '选择栏宽度',
   type: 'Number',
-  defaultValue: 200,
-  id: '3',
+  defaultValue: '161',
+  id: '7',
 }, {
-  property: 'toggle',
-  explain: '设置一级菜单能否折叠',
-  type: 'Boolean',
-  defaultValue: 'false',
-  id: '4',
+  property: 'beforeChange',
+  explain: '点击日期发生改变前的回调函数，参数是选中日期（年，月，日）',
+  type: 'Function',
+  defaultValue: '() => {}',
+  id: '8',
+}, {
+  property: 'onChange',
+  explain: '点击日期发生改变时的回调函数，参数同上',
+  type: 'Function',
+  defaultValue: '() => {}',
+  id: '9',
+}, {
+  property: 'afterChange',
+  explain: '点击日期发生改变后的回调函数，参数同上',
+  type: 'Function',
+  defaultValue: '() => {}',
+  id: '10',
 }];
 
-const itemsData = [{
-  property: 'title',
-  explain: '一级标题',
+const disabledData = [{
+  property: 'min',
+  explain: '小于此年月的日期皆不可被选',
   type: 'String',
   defaultValue: '-',
   id: '1',
 }, {
-  property: 'fold',
-  explain: '初始状态时二级标题是否折叠起来',
-  type: 'Blooean',
-  defaultValue: 'false',
+  property: 'max',
+  explain: '大于等于此年月的日期皆不可被选',
+  type: 'String',
+  defaultValue: '-',
   id: '2',
 }, {
-  property: 'key',
-  explain: '用来作为每个一级标题的唯一标识',
-  type: 'String',
+  property: 'weeks',
+  explain: '数组元素要求是数字类型，0~6表示周日至周一',
+  type: 'Array',
   defaultValue: '-',
   id: '3',
 }, {
-  property: 'submenu',
-  explain: '二级标题',
+  property: 'max',
+  explain: '例["2018-07-01", "2018-07-02"]',
   type: 'Array',
   defaultValue: '-',
   id: '4',
 }];
 
-const submenuData = [{
-  property: 'subtitle',
-  explain: '二级标题',
-  type: 'String',
-  defaultValue: '-',
-  id: '1',
-}, {
-  property: 'key',
-  explain: '用来作为每个二级标题的唯一标识',
-  type: 'String',
-  defaultValue: '-',
-  id: '2',
-}, {
-  property: 'onClick',
-  explain: '点击二级标题的回调函数，会覆盖上面的onClick回调函数，参数同上',
-  type: 'Function',
-  defaultValue: '-',
-  id: '3',
-}];
+const localData = [
+  {
+    property: 'weeks',
+    explain: '元素为需要的星期格式，比如["星期一", "星期二", ...]',
+    type: 'Array',
+    defaultValue: '-',
+    id: '1',
+  }, {
+    property: 'months',
+    explain: '元素为需要的月份格式, 比如["一月", "二月", ...]',
+    type: 'Array',
+    defaultValue: '-',
+    id: '2',
+  },
+];
 
 class Model extends React.Component {
   constructor(props) {
@@ -125,9 +158,14 @@ class Model extends React.Component {
           <div className="title">基础用法</div>
           <div className="base-container-wrapper">
             <Base
-              demo={config.data.menu.demo}
-              description={config.data.menu.description}
-              code={menuDemo}
+              demo={config.data.calendar1.demo}
+              description={config.data.calendar1.description}
+              code={calendar1Demo}
+            />
+            <Base
+              demo={config.data.calendar2.demo}
+              description={config.data.calendar2.description}
+              code={calendar2Demo}
             />
           </div>
         </div>
@@ -146,12 +184,12 @@ class Model extends React.Component {
           </div>
         </div>
         <div className="API-wrapper">
-          <div className="content-title">items</div>
+          <div className="content-title">disabled</div>
           <div>
             <Table
               width="90%"
               column={column}
-              data={itemsData}
+              data={disabledData}
               dataKey="id"
               checkbox={false}
               striped={false}
@@ -160,12 +198,12 @@ class Model extends React.Component {
           </div>
         </div>
         <div className="API-wrapper">
-          <div className="content-title">submenu</div>
+          <div className="content-title">local</div>
           <div>
             <Table
               width="90%"
               column={column}
-              data={submenuData}
+              data={localData}
               dataKey="id"
               checkbox={false}
               striped={false}
