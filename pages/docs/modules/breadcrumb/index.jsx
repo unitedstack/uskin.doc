@@ -4,7 +4,7 @@ import Base from 'components/base/index';
 import './style/index.less';
 import highlight from '../../cores/highlight';
 import config from './config.js';
-import menuDemo from './menu.md';
+import breadcrumbDemo from './breadcrumb.md';
 
 const column = [{
   title: '属性',
@@ -34,72 +34,28 @@ const apiData = [{
   property: 'items（必填）',
   explain: '面包屑内容',
   type: 'Array',
-  defaultValue: '-',
+  defaultValue: '[]',
   id: '1',
 }, {
   property: 'onClick',
-  explain: '点击二级i标题的回调函数，参数为事件对象和标题对象',
+  explain: '点击地址的回调函数，参数为点击项名称和地址组成的对象以及事件对象',
   type: 'Function',
   defaultValue: '() => {}',
   id: '2',
-}, {
-  property: 'width',
-  explain: '导航菜单的宽度',
-  type: 'Number',
-  defaultValue: 200,
-  id: '3',
-}, {
-  property: 'toggle',
-  explain: '设置一级菜单能否折叠',
-  type: 'Boolean',
-  defaultValue: 'false',
-  id: '4',
 }];
 
 const itemsData = [{
-  property: 'title',
-  explain: '一级标题',
+  property: 'name',
+  explain: '显示在页面上的地址名称',
   type: 'String',
   defaultValue: '-',
   id: '1',
 }, {
-  property: 'fold',
-  explain: '初始状态时二级标题是否折叠起来',
-  type: 'Blooean',
-  defaultValue: 'false',
-  id: '2',
-}, {
-  property: 'key',
-  explain: '用来作为每个一级标题的唯一标识',
-  type: 'String',
-  defaultValue: '-',
-  id: '3',
-}, {
-  property: 'submenu',
-  explain: '二级标题',
-  type: 'Array',
-  defaultValue: '-',
-  id: '4',
-}];
-
-const submenuData = [{
-  property: 'subtitle',
-  explain: '二级标题',
-  type: 'String',
-  defaultValue: '-',
-  id: '1',
-}, {
-  property: 'key',
-  explain: '用来作为每个二级标题的唯一标识',
+  property: 'href',
+  explain: '跳转地址',
   type: 'String',
   defaultValue: '-',
   id: '2',
-}, {
-  property: 'onClick',
-  explain: '点击二级标题的回调函数，会覆盖上面的onClick回调函数，参数同上',
-  type: 'Function',
-  defaultValue: '-',
-  id: '3',
 }];
 
 class Model extends React.Component {
@@ -125,9 +81,9 @@ class Model extends React.Component {
           <div className="title">基础用法</div>
           <div className="base-container-wrapper">
             <Base
-              demo={config.data.menu.demo}
-              description={config.data.menu.description}
-              code={menuDemo}
+              demo={config.data.breadcrumb.demo}
+              description={config.data.breadcrumb.description}
+              code={breadcrumbDemo}
             />
           </div>
         </div>
@@ -152,20 +108,6 @@ class Model extends React.Component {
               width="90%"
               column={column}
               data={itemsData}
-              dataKey="id"
-              checkbox={false}
-              striped={false}
-              hover={false}
-            />
-          </div>
-        </div>
-        <div className="API-wrapper">
-          <div className="content-title">submenu</div>
-          <div>
-            <Table
-              width="90%"
-              column={column}
-              data={submenuData}
               dataKey="id"
               checkbox={false}
               striped={false}
