@@ -229,11 +229,6 @@
   width: 870px;
   box-sizing: border-box;
 }
-.base-container .title {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #1D2E3B;
-}
 .base-container .demo-container {
   padding: 30px 30px 30px 32px;
   border-radius: 2px;
@@ -246,7 +241,9 @@
   box-shadow: 0 0 0 1px #ededed;
 }
 .base-container .description-container .description-left {
-  width: 698px;
+  width: 100%;
+  padding-right: 100px;
+  box-sizing: border-box;
   font-size: 12px;
   color: #768491;
   letter-spacing: 0;
@@ -299,13 +296,214 @@
   box-shadow: 0 0 0 1px #ededed;
 }
 
+.intro-button-group-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-button-group-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-button-group-wrapper .base-wrapper .base-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-button-group-wrapper .base-wrapper .base-container-wrapper .base-container-left,
+.intro-button-group-wrapper .base-wrapper .base-container-wrapper .base-container-right {
+  margin: 1%;
+  float: left;
+  width: 48%;
+}
+.intro-button-group-wrapper .base-wrapper .base-container-wrapper .base-container-left .base-container,
+.intro-button-group-wrapper .base-wrapper .base-container-wrapper .base-container-right .base-container {
+  width: 100%;
+}
+
+.intro-button-wrapper button {
+  margin: 0 10px;
+}
+.intro-button-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-button-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-button-wrapper .base-wrapper .base-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-button-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  float: left;
+  width: 45%;
+}
+.intro-button-wrapper .base-wrapper .base-container-wrapper button {
+  vertical-align: bottom;
+}
+
+.intro-dropdown-btn-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-dropdown-btn-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-dropdown-btn-wrapper .base-wrapper .base-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-dropdown-btn-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  float: left;
+  width: 55%;
+}
+.intro-dropdown-btn-wrapper .base-wrapper .base-container-wrapper .base-container .dropdown-btn .dropdown {
+  position: static;
+  width: 168px;
+}
+.intro-dropdown-btn-wrapper .base-wrapper .base-container-wrapper .base-container .dropdown-btn:last-child {
+  position: absolute;
+}
+
+.intro-dropdown-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-dropdown-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-dropdown-wrapper .base-wrapper .base-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-dropdown-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  float: left;
+  width: 48%;
+}
+.intro-dropdown-wrapper .base-wrapper .base-container-wrapper .base-container .dropdown {
+  position: static;
+  width: 168px;
+}
+
 .intro-button-wrapper button {
   margin: 0 10px;
 }
 
-.garen-module-alert {
+.intro-notification-wrapper button {
+  margin: 10px 10px;
+}
+.intro-notification-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-notification-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-notification-wrapper .base-wrapper .base-container-wrapper {
   display: flex;
-  flex: 1;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-notification-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  width: 45%;
+}
+
+.intro-panel-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-panel-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-panel-wrapper .base-wrapper .base-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-panel-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  float: left;
+  width: 55%;
+}
+
+.intro-switch-wrapper .switch {
+  margin: 10px;
+}
+.intro-switch-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-switch-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-switch-wrapper .base-wrapper .base-container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-switch-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  width: 45%;
+}
+
+.intro-tab-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-tab-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-tab-wrapper .base-wrapper .base-container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-tab-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  width: 45%;
+}
+
+.intro-table-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-table-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-table-wrapper .base-wrapper .base-container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-table-wrapper .base-wrapper .base-container-wrapper .base-container {
+  width: 98%;
+  margin: 1%;
+}
+.intro-table-wrapper .base-wrapper .base-container-wrapper .base-container .title {
+  font-size: 12px;
 }
 
 /**
@@ -3724,7 +3922,7 @@ samp {
   width: 100%;
 }
 #app .wrapper {
-  width: 100%;
+  margin: 0 auto;
 }
 #app .wrapper .navbar {
   width: 100%;
@@ -3732,8 +3930,10 @@ samp {
   background-color: #1D2E3B;
 }
 #app .wrapper .content {
-  margin-top: 20px;
+  margin: 20px auto 0;
+  width: 1140px;
   display: flex;
+  overflow: hidden;
 }
 #app .wrapper .content .simple-description-wrapper,
 #app .wrapper .content .API-wrapper,
