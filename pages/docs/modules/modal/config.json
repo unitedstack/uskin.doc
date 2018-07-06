@@ -1,0 +1,75 @@
+{
+  "title": "Modal",
+  "title_cn": "模态对话框",
+  "simple_description": "需要用户处理事务，又不希望跳转页面以致打断工作流程时，可以使用 Modal 在当前页面正中打开一个浮层，承载相应的操作。",
+  "data": {
+    "base": {
+      "demo":{
+        "data":[{
+          "type": "button",
+          "config":{
+            "value": "open modal"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "基本的模态框"
+      }
+    },"simple": {
+      "demo":{
+        "data":[{
+          "type": "button",
+          "config":{
+            "value": "Info"
+          }
+        }, {
+          "type": "button",
+          "config":{
+            "value": "Success",
+            "type": "create"
+          }
+        }, {
+          "type": "button",
+          "config":{
+            "value": "Warning",
+            "type": "warning"
+          }
+        }, {
+          "type": "button",
+          "config":{
+            "value": "Danger",
+            "type": "delete"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "各种类型的信息提示，只提供一个按钮用于关闭。"
+      }
+    },"width": {
+      "demo":{
+        "data":[{
+          "type": "button",
+          "config":{
+            "value": "300px width"
+          }
+        }, {
+          "type": "button",
+          "config":{
+            "value": "500px width"
+          }
+        }, {
+          "type": "button",
+          "config":{
+            "value": "700px width"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "自定义宽度"
+      }
+    }
+  }
+}

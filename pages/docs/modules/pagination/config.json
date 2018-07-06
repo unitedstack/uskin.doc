@@ -1,0 +1,41 @@
+{
+  "title": "Pagination",
+  "title_cn": "分页",
+  "simple_description": "采用分页的形式分隔长列表，每次只加载一个页面。",
+  "data": {
+    "label_pagination": {
+      "demo":{
+        "data":[{
+          "type": "pagination",
+          "config":{
+            "labelOnly": true,
+            "label": {
+              "first": true,
+              "prev": true,
+              "next": true,
+              "last": true
+            }
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "前后页按钮形式的分页"
+      }
+    },"number_pagination": {
+      "demo":{
+        "data":[{
+          "type": "pagination",
+          "config":{
+            "total": 10,
+            "current": 3
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "页码按钮形式的分页"
+      }
+    }
+  }
+}
