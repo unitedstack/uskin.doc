@@ -78,6 +78,31 @@
         "hide": true,
         "content": "按钮有5种大小：xs、sm、initial( 根据文字自适应大小 )、lg、xl。"
       }
+    },"state": {
+      "demo":{
+        "data":[{
+          "type": "button",
+          "config":{
+            "value": "default"
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "selected",
+            "selected": true
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "disabled",
+            "disabled": true
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "按钮具有默认状态、选中状态、禁止使用状态。"
+      }
     }
   }
 

@@ -93,6 +93,21 @@
           "subtitle": "calendar",
           "subtitleCn": "日历",
           "key": "calendar"
+        },
+        {
+          "subtitle": "Input Number",
+          "subtitleCn": "数字输入框",
+          "key": "input-number"
+        },
+        {
+          "subtitle": "Input Search",
+          "subtitleCn": "搜索输入框",
+          "key": "input-search"
+        },
+        {
+          "subtitle": "slider",
+          "subtitleCn": "滑动数字输入条",
+          "key": "slider"
         }
       ]
     }
