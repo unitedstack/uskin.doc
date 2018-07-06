@@ -1,0 +1,113 @@
+{
+  "title": "Step",
+  "title_cn": "步骤条",
+  "simple_description": "引导用户按照流程完成任务的导航条。",
+  "data": {
+    "base": {
+      "demo":{
+        "data":[{
+          "type": "step",
+          "config":{
+            "items": [{
+              "name": "First"
+            }, {
+              "name": "Second",
+              "default": true
+            }, {
+              "name": "Third"
+            }],
+            "width": 350
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "简单的步骤条"
+      }
+    },"consecutive": {
+      "demo":{
+        "data":[{
+          "type": "step",
+          "config":{
+            "items": [{
+              "name": "First"
+            }, {
+              "name": "Second"
+            }, {
+              "name": "Third",
+              "default": true
+            }, {
+              "name": "Fourth"
+            }],
+            "width": 350,
+            "consecutive": true
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "可以将步骤条设置为当前步骤及之前的步骤均高亮"
+      }
+    },"width": {
+      "demo":{
+        "data":[{
+          "type": "step",
+          "config":{
+            "items": [{
+              "name": "First"
+            }, {
+              "name": "Second"
+            }, {
+              "name": "Third",
+              "default": true
+            }, {
+              "name": "Fourth"
+            }],
+            "width": 200
+          }
+        },{
+          "type": "step",
+          "config":{
+            "items": [{
+              "name": "First"
+            }, {
+              "name": "Second"
+            }, {
+              "name": "Third",
+              "default": true
+            }, {
+              "name": "Fourth"
+            }],
+            "width": 300
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "可以设置步骤条的总宽度"
+      }
+    }, "disabled": {
+      "demo":{
+        "data":[{
+          "type": "step",
+          "config":{
+            "items": [{
+              "name": "First"
+            }, {
+              "name": "Second",
+              "default": true
+            }, {
+              "name": "Third"
+            }],
+            "width": 350,
+            "disabled": true
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "可以设置一个单纯起展示作用的步骤条，不可点击，只用来显示步骤进行到哪一步"
+      }
+    }
+  }
+}

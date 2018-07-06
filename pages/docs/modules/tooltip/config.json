@@ -1,0 +1,157 @@
+{
+  "title": "Tooltip",
+  "title_cn": "文字提示框",
+  "simple_description": "简单的文字提示气泡框，可用来代替系统默认的 title 提示，提供一个按钮/文字/操作的文案解释。",
+  "data": {
+    "shape": {
+      "demo":{
+        "data":[{
+          "type": "tooltip",
+          "config":{
+            "shape": "top-left",
+            "content": "top left tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "top",
+            "content": "top tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "top-right",
+            "content": "top right tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "right-top",
+            "content": "right top tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "right",
+            "content": "right tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "right-bottom",
+            "content": "right bottom tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "bottom-right",
+            "content": "bottom right tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "bottom",
+            "content": "bottom tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "bottom-left",
+            "content": "bottom left tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "left-bottom",
+            "content": "left bottom tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "left",
+            "content": "left tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "shape": "left-top",
+            "content": "left top tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "content": "tooltip"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "tooltip 的有 12 个三角的方向，或者不使用三角，仅仅当做普通的 tooltip 使用"
+      }
+    },"type": {
+      "demo":{
+        "data":[{
+          "type": "tooltip",
+          "config":{
+            "content": "tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "type": "error",
+            "content": "error tooltip"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "tooltip 支持两种类型，处理正常的类型以外就是 error 类型，正常类型不需要传 type 参数"
+      }
+    },"width": {
+      "demo":{
+        "data":[{
+          "type": "tooltip",
+          "config":{
+            "content": "50px width",
+            "width": 50
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "content": "100px width",
+            "width": 100
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "content": "130px width",
+            "width": 130
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "tooltip 可以自定义宽度"
+      }
+    }, "hide": {
+      "demo":{
+        "data":[{
+          "type": "tooltip",
+          "config":{
+            "content": "tooltip"
+          }
+        },{
+          "type": "tooltip",
+          "config":{
+            "content": "hidden tooltip",
+            "hide": true
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "不需要的时候可以隐藏 tooltip"
+      }
+    }
+  }
+}

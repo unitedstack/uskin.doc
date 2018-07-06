@@ -58,6 +58,26 @@
           "subtitle": "table",
           "subtitleCn": "表格",
           "key": "table"
+        },
+        {
+          "subtitle": "tooltip",
+          "subtitleCn": "文字提示框",
+          "key": "tooltip"
+        },
+        {
+          "subtitle": "step",
+          "subtitleCn": "步骤条",
+          "key": "step"
+        },
+        {
+          "subtitle": "pagination",
+          "subtitleCn": "分页",
+          "key": "pagination"
+        },
+        {
+          "subtitle": "modal",
+          "subtitleCn": "模态对话框",
+          "key": "modal"
         }
       ]
     }
