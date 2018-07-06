@@ -1,0 +1,78 @@
+{
+  "title": "Switch",
+  "title_cn": "开关",
+  "simple_description": "打开开关以改变状态并触发事件。",
+  "data": {
+    "type": {
+      "demo":{
+        "data":[{
+          "type": "switch",
+          "config":{
+            "labelOn": "ON",
+            "labelOff": "OFF",
+            "checked": true
+          }
+        }, {
+          "type": "switch",
+          "config":{
+            "labelOn": "ON",
+            "labelOff": "OFF",
+            "checked": false
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "配置属性Labelon，LabelOf，选中初始化开关"
+      }
+    },
+    "width": {
+      "demo": {
+        "data": [{
+          "type": "switch",
+          "config":{
+            "labelOn": "ON",
+            "labelOff": "OFF",
+            "checked": true,
+            "width": 50
+          }
+        }, {
+          "type": "switch",
+          "config":{
+            "labelOn": "ON",
+            "labelOff": "OFF",
+            "width": 70
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "为Switch设置宽度"
+      }
+    },
+    "disabled": {
+      "demo": {
+        "data": [{
+          "type": "switch",
+          "config":{
+            "labelOn": "ON",
+            "labelOff": "OFF",
+            "checked": true,
+            "disabled": false
+          }
+        }, {
+          "type": "switch",
+          "config":{
+            "labelOn": "ON",
+            "labelOff": "OFF",
+            "disabled": true
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "设置禁用“true”使其无法点击开关"
+      }
+    }
+  }
+}

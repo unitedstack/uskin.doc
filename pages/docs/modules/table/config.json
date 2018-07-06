@@ -1,0 +1,240 @@
+{
+  "title": "Table",
+  "title_cn": "表格",
+  "simple_description": "展示行列数据。",
+  "data": {
+    "default": {
+      "demo":{
+        "data":[{
+          "type": "table",
+          "config":{
+            "dataKey": "id",
+            "column": [{
+              "title": "ID",
+              "width": "150px",
+              "key": "id",
+              "dataIndex": "id"
+            }, {
+              "title": "Category",
+              "width": "120px",
+              "key": "category",
+              "dataIndex": "category"
+            }, {
+              "title": "Level",
+              "key": "level",
+              "dataIndex": "level"
+            }, {
+              "title": "Price",
+              "key": "price",
+              "dataIndex": "price"
+            }, {
+              "title": "Double Price",
+              "key": "double_price"
+            }],
+            "data": [{
+              "id": "1",
+              "category": "Micro-1",
+              "level": "First Level",
+              "price": "0.056"
+            }, {
+              "id": "2",
+              "category": "Standard-3",
+              "level": "Second Level",
+              "price": "0.444"
+            }, {
+              "id": "3",
+              "category": "Micro-2",
+              "level": "Third Level",
+              "price": "0.056"
+            }, {
+              "id": "4",
+              "category": "Standard-2",
+              "level": "Fourth Level",
+              "price": "0.444"
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "简单的表格"
+      }
+    },
+    "checkbox": {
+      "demo":{
+        "data":[{
+          "type": "table",
+          "config":{
+            "dataKey": "id",
+            "checkbox": true,
+            "striped": true,
+            "hover": true,
+            "column": [{
+              "title": "ID",
+              "width": "150px",
+              "key": "id",
+              "dataIndex": "id"
+            }, {
+              "title": "Category",
+              "width": "120px",
+              "key": "category",
+              "dataIndex": "category"
+            }, {
+              "title": "Level",
+              "key": "level",
+              "dataIndex": "level"
+            }, {
+              "title": "Price",
+              "key": "price",
+              "dataIndex": "price"
+            }, {
+              "title": "Double Price",
+              "key": "double_price"
+            }],
+            "data": [{
+              "id": "1",
+              "category": "Micro-1",
+              "level": "First Level",
+              "price": "0.056"
+            }, {
+              "id": "2",
+              "category": "Standard-3",
+              "level": "Second Level",
+              "price": "0.444"
+            }, {
+              "id": "3",
+              "category": "Micro-2",
+              "level": "Third Level",
+              "price": "0.056"
+            }, {
+              "id": "4",
+              "category": "Standard-2",
+              "level": "Fourth Level",
+              "price": "0.444"
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "checkbox: 设置true每行显示checkbox, striped: 设置true以启用每行之间的颜色区分, hover: 设置true以使颜色在行上悬停时发生变化。"
+      }
+    },
+    "filter": {
+      "demo":{
+        "data":[{
+          "type": "table",
+          "config":{
+            "dataKey": "id",
+            "checkbox": true,
+            "column": [{
+              "title": "ID",
+              "width": "150px",
+              "key": "id",
+              "dataIndex": "id"
+            }, {
+              "title": "Category",
+              "width": "120px",
+              "key": "category",
+              "dataIndex": "category"
+            }, {
+              "title": "Level",
+              "key": "level",
+              "dataIndex": "level"
+            }, {
+              "title": "Price",
+              "key": "price",
+              "dataIndex": "price"
+            }, {
+              "title": "Double Price",
+              "key": "double_price"
+            }],
+            "data": [{
+              "id": "1",
+              "category": "Micro-1",
+              "level": "First Level",
+              "price": "0.056"
+            }, {
+              "id": "2",
+              "category": "Standard-3",
+              "level": "Second Level",
+              "price": "0.444"
+            }, {
+              "id": "3",
+              "category": "Micro-2",
+              "level": "Third Level",
+              "price": "0.056"
+            }, {
+              "id": "4",
+              "category": "Standard-2",
+              "level": "Fourth Level",
+              "price": "0.444"
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "筛选"
+      }
+    },
+    "sort": {
+      "demo":{
+        "data":[{
+          "type": "table",
+          "config":{
+            "dataKey": "id",
+            "checkbox": true,
+            "column": [{
+              "title": "ID",
+              "width": "150px",
+              "key": "id",
+              "dataIndex": "id"
+            }, {
+              "title": "Category",
+              "width": "120px",
+              "key": "category",
+              "dataIndex": "category"
+            }, {
+              "title": "Level",
+              "key": "level",
+              "dataIndex": "level"
+            }, {
+              "title": "Price",
+              "key": "price",
+              "dataIndex": "price"
+            }, {
+              "title": "Double Price",
+              "key": "double_price"
+            }],
+            "data": [{
+              "id": "1",
+              "category": "Micro-1",
+              "level": "First Level",
+              "price": "0.056"
+            }, {
+              "id": "2",
+              "category": "Standard-3",
+              "level": "Second Level",
+              "price": "0.444"
+            }, {
+              "id": "3",
+              "category": "Micro-2",
+              "level": "Third Level",
+              "price": "0.056"
+            }, {
+              "id": "4",
+              "category": "Standard-2",
+              "level": "Fourth Level",
+              "price": "0.444"
+            }]
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "排序"
+      }
+    }
+  }
+}

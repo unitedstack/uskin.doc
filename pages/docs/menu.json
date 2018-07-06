@@ -43,6 +43,21 @@
           "subtitle": "notification",
           "subtitleCn": "通知",
           "key": "notification"
+        },
+        {
+          "subtitle": "switch",
+          "subtitleCn": "开关",
+          "key": "switch"
+        },
+        {
+          "subtitle": "tab",
+          "subtitleCn": "标签页",
+          "key": "tab"
+        },
+        {
+          "subtitle": "table",
+          "subtitleCn": "表格",
+          "key": "table"
         }
       ]
     }

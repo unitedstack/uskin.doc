@@ -1,27 +1,5 @@
 {
-  "title": "input",
-  "title_cn": "输入框",
-  "simple_description": "kjbibibnl.。",
-  "demo":{
-    "data":[{
-      "type": "button",
-      "config":{
-        "value": "sm",
-        "type": "cancel",
-        "size": "sm"
-      }
-    },{
-      "type": "button",
-      "config":{
-        "value": "xl",
-        "type": "create",
-        "size": "xl"
-      }
-    }]
-  },
-  "description": {
-    "hide": true,
-    "content": "lklkllll"
-  },
-  "code": ""
+  "title": "Notification",
+  "title_cn": "通知",
+  "simple_description": "在右上角的POP通知。"
 }
