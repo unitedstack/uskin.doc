@@ -343,6 +343,7 @@
   width: 45%;
 }
 .intro-button-wrapper .base-wrapper .base-container-wrapper button {
+  margin: 5px 10px;
   vertical-align: bottom;
 }
 
@@ -394,6 +395,55 @@
 .intro-dropdown-wrapper .base-wrapper .base-container-wrapper .base-container .dropdown {
   position: static;
   width: 168px;
+}
+
+.base-input-number-wrapper button {
+  margin: 0 10px;
+}
+.base-input-number-wrapper .base-wrapper {
+  width: 870px;
+}
+.base-input-number-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.base-input-number-wrapper .base-wrapper .base-container-wrapper {
+  margin-bottom: 60px;
+  width: 100%;
+}
+.base-input-number-wrapper .base-wrapper .base-container-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.base-input-number-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  float: left;
+  width: 47%;
+  vertical-align: top;
+}
+
+.intro-input-search-wrapper button {
+  margin: 0 10px;
+}
+.intro-input-search-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-input-search-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-input-search-wrapper .base-wrapper .base-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-input-search-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  float: left;
+  width: 98%;
 }
 
 .intro-button-wrapper button {
@@ -503,6 +553,28 @@
   margin: 1%;
   float: left;
   width: 55%;
+}
+
+.intro-slider-wrapper button {
+  margin: 0 10px;
+}
+.intro-slider-wrapper .base-wrapper {
+  width: 870px;
+}
+.intro-slider-wrapper .base-wrapper .title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1D2E3B;
+}
+.intro-slider-wrapper .base-wrapper .base-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.intro-slider-wrapper .base-wrapper .base-container-wrapper .base-container {
+  margin: 1%;
+  float: left;
+  width: 98%;
 }
 
 .intro-step-wrapper .base-wrapper {
