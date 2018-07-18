@@ -1,0 +1,24 @@
+{
+  "title": "Input Search",
+  "title_cn": "搜索输入框",
+  "simple_description": "搜索输入框主要是提供搜索的输入框。",
+  "data": {
+    "main": {
+      "demo":{
+        "data":[{
+          "type": "inputSearch",
+          "config":{
+            "width": 300,
+            "type": "light",
+            "placeholder": "请输入搜索内容"
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "带有搜索按钮的输入框。"
+      }
+    }
+  }
+
+}

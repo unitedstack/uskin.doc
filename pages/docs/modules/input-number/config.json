@@ -1,0 +1,75 @@
+{
+  "title": "Input Number",
+  "title_cn": "数字输入框",
+  "simple_description": "通过鼠标或键盘，输入范围内的数值。",
+  "data": {
+    "base": {
+      "demo":{
+        "data":[{
+          "type": "inputNumber",
+          "config":{
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "value": 36
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "数字输入框基本设置：最小值、最大值、变化步长. "
+      }
+    },"size": {
+      "demo":{
+        "data":[{
+          "type": "inputNumber",
+          "config":{
+            "min": 0,
+            "max": 10,
+            "step": 1,
+            "value": 3,
+            "width": 120
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "数字输入框的大小设置。"
+      }
+    },"disabled": {
+      "demo":{
+        "data":[{
+          "type": "inputNumber",
+          "config":{
+            "min": 0,
+            "max": 10,
+            "step": 3,
+            "value": 2,
+            "width": 120,
+            "disabled": true
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "数字输入框的不可用设置。"
+      }
+    },"float": {
+      "demo":{
+        "data":[{
+          "type": "inputNumber",
+          "config":{
+            "min": 0,
+            "max": 10,
+            "step": 0.1,
+            "value": 2.4
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "数字的精度取决于step的精度。"
+      }
+    }
+  }
+}

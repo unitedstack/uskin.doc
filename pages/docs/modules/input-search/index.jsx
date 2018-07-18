@@ -4,9 +4,7 @@ import Base from 'components/base/index';
 import './style/index.less';
 import highlight from '../../cores/highlight';
 import config from './config.json';
-import mdType from './md/type.md';
-import mdSize from './md/size.md';
-import mdState from './md/state.md';
+import mdMain from './md/main.md';
 
 const column = [{
   title: '属性',
@@ -33,53 +31,29 @@ const column = [{
 }];
 
 const data = [{
-  property: 'value',
-  explain: 'Button的文字',
+  property: 'type',
+  explain: '搜索框的样式，有默认和light样式',
   type: 'String',
-  defaultValue: '-',
+  defaultValue: '--',
   id: '1',
 }, {
-  property: 'type',
-  explain: '设置按钮类型',
-  type: 'String',
-  defaultValue: '-',
+  property: 'width',
+  explain: '搜索框的长度',
+  type: 'Number',
+  defaultValue: '--',
   id: '2',
 }, {
-  property: 'disabled',
-  explain: '设置按钮是否有效',
-  type: 'Boolean',
-  defaultValue: 'false',
+  property: 'placeholder',
+  explain: '提示文本',
+  type: 'String',
+  defaultValue: '--',
   id: '3',
 }, {
-  property: 'initial',
-  explain: 'Button的宽度适应于文字长度',
-  type: 'Boolean',
-  defaultValue: 'false',
-  id: '4',
-}, {
-  property: 'selected',
-  explain: 'Button是否要selected状态',
-  type: 'Boolean',
-  defaultValue: 'false',
-  id: '5',
-}, {
-  property: 'disabled',
-  explain: 'Button是否要disabled状态',
-  type: 'Boolean',
-  defaultValue: 'false',
-  id: '6',
-}, {
-  property: 'tag',
-  explain: '默认值为Button最后以button标签形式生成，当tag="div"时由div标签生成',
-  type: 'String',
-  defaultValue: '-',
-  id: '7',
-}, {
-  property: 'onClick',
-  explain: 'click事件的handler',
+  property: 'onChange',
+  explain: '返回搜索框内的文字段',
   type: 'Function',
-  defaultValue: '-',
-  id: '8',
+  defaultValue: '--',
+  id: '4',
 }];
 
 class Model extends React.Component {
@@ -91,7 +65,7 @@ class Model extends React.Component {
 
   render() {
     return (
-      <div className="intro-button-wrapper">
+      <div className="intro-input-search-wrapper">
         <div className="simple-description-wrapper">
           <div className="content-title">
             <span>{config.title}</span>
@@ -105,19 +79,9 @@ class Model extends React.Component {
           <div className="title">基础用法</div>
           <div className="base-container-wrapper">
             <Base
-              demo={config.data.type.demo}
-              description={config.data.type.description}
-              code={mdType}
-            />
-            <Base
-              demo={config.data.size.demo}
-              description={config.data.size.description}
-              code={mdSize}
-            />
-            <Base
-              demo={config.data.state.demo}
-              description={config.data.state.description}
-              code={mdState}
+              demo={config.data.main.demo}
+              description={config.data.main.description}
+              code={mdMain}
             />
           </div>
         </div>

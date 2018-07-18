@@ -1,0 +1,25 @@
+{
+  "title": "Slider",
+  "title_cn": "滑动输入条",
+  "simple_description": "滑动型输入器，展示当前值和可选范围。",
+  "data": {
+    "main": {
+      "demo":{
+        "data":[{
+          "type": "slider",
+          "config":{
+            "min": 10,
+            "max": 100,
+            "value": 30,
+            "step": 1,
+            "width": 300
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "当用户需要在数值区间/自定义区间内进行选择时，可为连续或离散值。"
+      }
+    }
+  }
+}
