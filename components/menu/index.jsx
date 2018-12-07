@@ -6,26 +6,14 @@ class Menu extends React.Component {
   constructor(props) {
     super(props);
     const data = this.props;
-    let hasSelected = false;
+    const defaultModule = window.location.hash.split('/')[1] || data.default.subtitle;
     data.items.forEach((item) => {
       item.subs.forEach((i) => {
-        if (i.selected && !hasSelected) {
-          hasSelected = true;
+        if (i.key === defaultModule) {
+          i.selected = true;
         }
       });
     });
-    if (!hasSelected) {
-      data.items.forEach((item) => {
-        if (item.key === data.default.title) {
-          item.subs.forEach((i) => {
-            if (i.key === data.default.subtitle) {
-              i.selected = true;
-              window.location.href = `${window.location.href.split('#/')[0]}#/${i.key}`;
-            }
-          });
-        }
-      });
-    }
     this.state = {
       data,
     };
