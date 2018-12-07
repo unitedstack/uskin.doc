@@ -1230,8 +1230,8 @@ select::-ms-expand {
 }
 @font-face {
   font-family: "icons";
-  src: url(./fonts/f266976e.icon.eot);
-  src: url(./fonts/f266976e.icon.eot?#iefix) format("embedded-opentype"), url(./fonts/08de70c5.icon.woff) format("woff"), url(./fonts/e3c22dcf.icon.ttf) format("truetype"), url(./fonts/1dc16f67.icon.svg#icons) format("svg");
+  src: url(./fonts/92ca9c34.icon.eot);
+  src: url(./fonts/92ca9c34.icon.eot?#iefix) format("embedded-opentype"), url(./fonts/2b762949.icon.woff) format("woff"), url(./fonts/4c6a0afb.icon.ttf) format("truetype"), url(./fonts/5efb6cd7.icon.svg#icons) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1269,440 +1269,497 @@ select::-ms-expand {
 .icon-applications:before {
   content: "\F106";
 }
-.icon-arrow-down:before {
+.icon-arch:before {
   content: "\F107";
 }
-.icon-arrow-left:before {
+.icon-arrow-down:before {
   content: "\F108";
 }
-.icon-arrow-right:before {
+.icon-arrow-left:before {
   content: "\F109";
 }
-.icon-arrow-up:before {
+.icon-arrow-right:before {
   content: "\F10A";
 }
-.icon-associate:before {
+.icon-arrow-up:before {
   content: "\F10B";
 }
-.icon-avatar:before {
+.icon-associate:before {
   content: "\F10C";
 }
-.icon-backup:before {
+.icon-avatar:before {
   content: "\F10D";
 }
-.icon-billing-record:before {
+.icon-backup:before {
   content: "\F10E";
 }
-.icon-billing:before {
+.icon-billing-record:before {
   content: "\F10F";
 }
-.icon-bucket:before {
+.icon-billing:before {
   content: "\F110";
 }
-.icon-bw-in:before {
+.icon-bucket:before {
   content: "\F111";
 }
-.icon-bw-out:before {
+.icon-bw-in:before {
   content: "\F112";
 }
-.icon-cache-config:before {
+.icon-bw-out:before {
   content: "\F113";
 }
-.icon-cache:before {
+.icon-cache-config:before {
   content: "\F114";
 }
-.icon-calendar:before {
+.icon-cache:before {
   content: "\F115";
 }
-.icon-cc-video:before {
+.icon-calendar:before {
   content: "\F116";
 }
-.icon-charge-record:before {
+.icon-cc-video:before {
   content: "\F117";
 }
-.icon-close:before {
+.icon-centos:before {
   content: "\F118";
 }
-.icon-cloud-video:before {
+.icon-charge-record:before {
   content: "\F119";
 }
-.icon-collaboration:before {
+.icon-close:before {
   content: "\F11A";
 }
-.icon-copy:before {
+.icon-cloud-video:before {
   content: "\F11B";
 }
-.icon-correct:before {
+.icon-collaboration:before {
   content: "\F11C";
 }
-.icon-create:before {
+.icon-copy:before {
   content: "\F11D";
 }
-.icon-database-config:before {
+.icon-coreos:before {
   content: "\F11E";
 }
-.icon-database:before {
+.icon-correct:before {
   content: "\F11F";
 }
-.icon-delete:before {
+.icon-cpu:before {
   content: "\F120";
 }
-.icon-deploy:before {
+.icon-create:before {
   content: "\F121";
 }
-.icon-disable:before {
+.icon-database-config:before {
   content: "\F122";
 }
-.icon-dissociate:before {
+.icon-database:before {
   content: "\F123";
 }
-.icon-doc:before {
+.icon-debian:before {
   content: "\F124";
 }
-.icon-docx:before {
+.icon-delete:before {
   content: "\F125";
 }
-.icon-domain:before {
+.icon-deploy:before {
   content: "\F126";
 }
-.icon-double-arrow-left:before {
+.icon-disable:before {
   content: "\F127";
 }
-.icon-double-arrow-right:before {
+.icon-dissociate:before {
   content: "\F128";
 }
-.icon-download:before {
+.icon-doc:before {
   content: "\F129";
 }
-.icon-dropdown:before {
+.icon-docx:before {
   content: "\F12A";
 }
-.icon-edit:before {
+.icon-domain:before {
   content: "\F12B";
 }
-.icon-empty:before {
+.icon-double-arrow-left:before {
   content: "\F12C";
 }
-.icon-enable:before {
+.icon-double-arrow-right:before {
   content: "\F12D";
 }
-.icon-exe:before {
+.icon-download:before {
   content: "\F12E";
 }
-.icon-eye:before {
+.icon-dropdown:before {
   content: "\F12F";
 }
-.icon-file-sharing:before {
+.icon-edit:before {
   content: "\F130";
 }
-.icon-file:before {
+.icon-empty:before {
   content: "\F131";
 }
-.icon-filter-collapse:before {
+.icon-enable:before {
   content: "\F132";
 }
-.icon-filter-expand:before {
+.icon-epc-suse:before {
   content: "\F133";
 }
-.icon-flavor-setting:before {
+.icon-exe:before {
   content: "\F134";
 }
-.icon-flavor:before {
+.icon-eye:before {
   content: "\F135";
 }
-.icon-floating-ip:before {
+.icon-fedora:before {
   content: "\F136";
 }
-.icon-flv:before {
+.icon-file-sharing:before {
   content: "\F137";
 }
-.icon-folder:before {
+.icon-file:before {
   content: "\F138";
 }
-.icon-g-admin:before {
+.icon-filter-collapse:before {
   content: "\F139";
 }
-.icon-g-approval:before {
+.icon-filter-expand:before {
   content: "\F13A";
 }
-.icon-g-bill:before {
+.icon-flavor-setting:before {
   content: "\F13B";
 }
-.icon-g-calamari:before {
+.icon-flavor:before {
   content: "\F13C";
 }
-.icon-g-dashboard:before {
+.icon-floating-ip:before {
   content: "\F13D";
 }
-.icon-g-ec2:before {
+.icon-flv:before {
   content: "\F13E";
 }
-.icon-g-grafana:before {
+.icon-folder:before {
   content: "\F13F";
 }
-.icon-g-rds:before {
+.icon-freebsd:before {
   content: "\F140";
 }
-.icon-g-storage:before {
+.icon-g-admin:before {
   content: "\F141";
 }
-.icon-g-subaccount:before {
+.icon-g-approval:before {
   content: "\F142";
 }
-.icon-g-ticket:before {
+.icon-g-bill:before {
   content: "\F143";
 }
-.icon-g-union:before {
+.icon-g-calamari:before {
   content: "\F144";
 }
-.icon-g-vmware:before {
+.icon-g-dashboard:before {
   content: "\F145";
 }
-.icon-g-vpc:before {
+.icon-g-ec2:before {
   content: "\F146";
 }
-.icon-global:before {
+.icon-g-grafana:before {
   content: "\F147";
 }
-.icon-heat-list:before {
+.icon-g-rds:before {
   content: "\F148";
 }
-.icon-help:before {
+.icon-g-storage:before {
   content: "\F149";
 }
-.icon-host-aggregates:before {
+.icon-g-subaccount:before {
   content: "\F14A";
 }
-.icon-host:before {
+.icon-g-ticket:before {
   content: "\F14B";
 }
-.icon-image:before {
+.icon-g-union:before {
   content: "\F14C";
 }
-.icon-instance-snapshot:before {
+.icon-g-vmware:before {
   content: "\F14D";
 }
-.icon-instance:before {
+.icon-g-vpc:before {
   content: "\F14E";
 }
-.icon-invoice:before {
+.icon-gentoo:before {
   content: "\F14F";
 }
-.icon-jpg:before {
+.icon-global:before {
   content: "\F150";
 }
-.icon-keypair:before {
+.icon-heat-list:before {
   content: "\F151";
 }
-.icon-lb:before {
+.icon-help:before {
   content: "\F152";
 }
-.icon-listener:before {
+.icon-host-aggregates:before {
   content: "\F153";
 }
-.icon-loading:before {
+.icon-host:before {
   content: "\F154";
 }
-.icon-log:before {
+.icon-image:before {
   content: "\F155";
 }
-.icon-logout:before {
+.icon-instance-snapshot:before {
   content: "\F156";
 }
-.icon-metadata-definition:before {
+.icon-instance:before {
   content: "\F157";
 }
-.icon-monitor:before {
+.icon-invoice:before {
   content: "\F158";
 }
-.icon-more:before {
+.icon-jpg:before {
   content: "\F159";
 }
-.icon-mp3:before {
+.icon-keypair:before {
   content: "\F15A";
 }
-.icon-mp4:before {
+.icon-lb:before {
   content: "\F15B";
 }
-.icon-mvb:before {
+.icon-listener:before {
   content: "\F15C";
 }
-.icon-network:before {
+.icon-loading:before {
   content: "\F15D";
 }
-.icon-notice-management:before {
+.icon-log:before {
   content: "\F15E";
 }
-.icon-notification:before {
+.icon-logout:before {
   content: "\F15F";
 }
-.icon-object-storage:before {
+.icon-memory:before {
   content: "\F160";
 }
-.icon-overview:before {
+.icon-metadata-definition:before {
   content: "\F161";
 }
-.icon-pdf:before {
+.icon-monitor:before {
   content: "\F162";
 }
-.icon-performance:before {
+.icon-more:before {
   content: "\F163";
 }
-.icon-png:before {
+.icon-mp3:before {
   content: "\F164";
 }
-.icon-port:before {
+.icon-mp4:before {
   content: "\F165";
 }
-.icon-power-off:before {
+.icon-mvb:before {
   content: "\F166";
 }
-.icon-power-on:before {
+.icon-network-qos:before {
   content: "\F167";
 }
-.icon-ppt:before {
+.icon-network:before {
   content: "\F168";
 }
-.icon-pptx:before {
+.icon-notice-management:before {
   content: "\F169";
 }
-.icon-project:before {
+.icon-notification:before {
   content: "\F16A";
 }
-.icon-property:before {
+.icon-object-storage:before {
   content: "\F16B";
 }
-.icon-question:before {
+.icon-opensuse:before {
   content: "\F16C";
 }
-.icon-quota-approval:before {
+.icon-overview:before {
   content: "\F16D";
 }
-.icon-rar:before {
+.icon-pdf:before {
   content: "\F16E";
 }
-.icon-redirect-policy:before {
+.icon-performance:before {
   content: "\F16F";
 }
-.icon-refresh:before {
+.icon-png:before {
   content: "\F170";
 }
-.icon-region:before {
+.icon-port:before {
   content: "\F171";
 }
-.icon-registration-approval:before {
+.icon-power-off:before {
   content: "\F172";
 }
-.icon-remove:before {
+.icon-power-on:before {
   content: "\F173";
 }
-.icon-resource-pool:before {
+.icon-ppt:before {
   content: "\F174";
 }
-.icon-restart:before {
+.icon-pptx:before {
   content: "\F175";
 }
-.icon-rmvb:before {
+.icon-project:before {
   content: "\F176";
 }
-.icon-role:before {
+.icon-property:before {
   content: "\F177";
 }
-.icon-router:before {
+.icon-question:before {
   content: "\F178";
 }
-.icon-search:before {
+.icon-quota-approval:before {
   content: "\F179";
 }
-.icon-security-group:before {
+.icon-rar:before {
   content: "\F17A";
 }
-.icon-select-down:before {
+.icon-red-hat:before {
   content: "\F17B";
 }
-.icon-setting:before {
+.icon-redhat:before {
   content: "\F17C";
 }
-.icon-snapshot:before {
+.icon-redirect-policy:before {
   content: "\F17D";
 }
-.icon-status-active:before {
+.icon-refresh:before {
   content: "\F17E";
 }
-.icon-status-approving:before {
+.icon-region:before {
   content: "\F17F";
 }
-.icon-status-deleted:before {
+.icon-registration-approval:before {
   content: "\F180";
 }
-.icon-status-disabled:before {
+.icon-remove:before {
   content: "\F181";
 }
-.icon-status-light:before {
+.icon-resource-pool:before {
   content: "\F182";
 }
-.icon-status-paused:before {
+.icon-restart:before {
   content: "\F183";
 }
-.icon-status-pending:before {
+.icon-rmvb:before {
   content: "\F184";
 }
-.icon-status-shutdown:before {
+.icon-role:before {
   content: "\F185";
 }
-.icon-status-warning:before {
+.icon-router:before {
   content: "\F186";
 }
-.icon-subnet:before {
+.icon-search:before {
   content: "\F187";
 }
-.icon-swf:before {
+.icon-security-group:before {
   content: "\F188";
 }
-.icon-system-information:before {
+.icon-security-log:before {
   content: "\F189";
 }
-.icon-template-list:before {
+.icon-select-down:before {
   content: "\F18A";
 }
-.icon-ticket:before {
+.icon-setting:before {
   content: "\F18B";
 }
-.icon-tiff:before {
+.icon-sles:before {
   content: "\F18C";
 }
-.icon-topology:before {
+.icon-snapshot:before {
   content: "\F18D";
 }
-.icon-txt:before {
+.icon-status-active:before {
   content: "\F18E";
 }
-.icon-upload:before {
+.icon-status-approving:before {
   content: "\F18F";
 }
-.icon-user-group:before {
+.icon-status-deleted:before {
   content: "\F190";
 }
-.icon-user:before {
+.icon-status-disabled:before {
   content: "\F191";
 }
-.icon-video-account-management:before {
+.icon-status-light:before {
   content: "\F192";
 }
-.icon-vnc:before {
+.icon-status-paused:before {
   content: "\F193";
 }
-.icon-volume:before {
+.icon-status-pending:before {
   content: "\F194";
 }
-.icon-wma:before {
+.icon-status-shutdown:before {
   content: "\F195";
 }
-.icon-xls:before {
+.icon-status-warning:before {
   content: "\F196";
 }
-.icon-zip:before {
+.icon-subnet:before {
   content: "\F197";
+}
+.icon-swf:before {
+  content: "\F198";
+}
+.icon-system-information:before {
+  content: "\F199";
+}
+.icon-template-list:before {
+  content: "\F19A";
+}
+.icon-tfcloud:before {
+  content: "\F19B";
+}
+.icon-ticket:before {
+  content: "\F19C";
+}
+.icon-tiff:before {
+  content: "\F19D";
+}
+.icon-topology:before {
+  content: "\F19E";
+}
+.icon-txt:before {
+  content: "\F19F";
+}
+.icon-ubuntu:before {
+  content: "\F1A0";
+}
+.icon-upload:before {
+  content: "\F1A1";
+}
+.icon-user-group:before {
+  content: "\F1A2";
+}
+.icon-user:before {
+  content: "\F1A3";
+}
+.icon-video-account-management:before {
+  content: "\F1A4";
+}
+.icon-vnc:before {
+  content: "\F1A5";
+}
+.icon-volume:before {
+  content: "\F1A6";
+}
+.icon-windows:before {
+  content: "\F1A7";
+}
+.icon-wma:before {
+  content: "\F1A8";
+}
+.icon-xls:before {
+  content: "\F1A9";
+}
+.icon-zip:before {
+  content: "\F1AA";
 }
 @-webkit-keyframes spin {
   from {
@@ -2023,7 +2080,7 @@ table.table > tbody > tr > td {
   font-size: 36px !important;
 }
 .table .loading-data .icon-loading:before {
-  content: "\F154";
+  content: "\F15D";
 }
 .table .table-body {
   overflow-x: hidden;
@@ -2406,6 +2463,11 @@ input[type="checkbox"]:disabled {
   height: 24px;
   line-height: 22px;
   border-radius: 2px;
+}
+.btn-loading > .icon-loading {
+  animation: spin 1.28s linear .28s infinite;
+  -moz-animation: spin 1.28s linear .28s infinite;
+  -webkit-animation: spin 1.28s linear .28s infinite;
 }
 .btn-group {
   display: inline-block;
@@ -3580,6 +3642,35 @@ input[type="checkbox"]:disabled {
   color: #fff;
   cursor: default;
 }
+.input-number-mini {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.input-number-mini .disabled {
+  cursor: not-allowed !important;
+}
+.input-number-mini > span {
+  display: inline-block;
+  width: 20px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  text-align: center;
+  background: #F6F6F6;
+  border-radius: 2px 0 0 2px;
+}
+.input-number-mini > span:hover {
+  cursor: pointer;
+}
+.input-number-mini > input {
+  width: 32px;
+  background: #FCFCFC;
+  border-color: #FCFCFC;
+  text-align: center;
+  padding: 4px 6px;
+}
 .input-number {
   width: 80px;
   position: relative;
@@ -3718,7 +3809,7 @@ input[type="checkbox"]:disabled {
   font-size: 14px !important;
 }
 .loading-tip:before {
-  content: "\F154";
+  content: "\F15D";
 }
 .loading-notification {
   animation: spin 1.28s linear .28s infinite;
@@ -3727,7 +3818,7 @@ input[type="checkbox"]:disabled {
   font-size: 30px !important;
 }
 .loading-notification:before {
-  content: "\F154";
+  content: "\F15D";
 }
 .loading {
   animation: spin 1.28s linear .28s infinite;
@@ -3736,7 +3827,7 @@ input[type="checkbox"]:disabled {
   font-size: 32px !important;
 }
 .loading:before {
-  content: "\F154";
+  content: "\F15D";
 }
 .tooltip {
   position: absolute;
