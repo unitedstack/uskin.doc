@@ -73,6 +73,7 @@ class Model extends React.Component {
                   return <Route key={i} path={`/${m}`} component={M} />;
                 })
               }
+              <Route path="/" component={modules[loader.configs.default.subtitle]} />
             </Switch>
           </div>
         </div>
