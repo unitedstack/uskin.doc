@@ -7,6 +7,7 @@ import config from './config.json';
 import mdType from './md/type.md';
 import mdSize from './md/size.md';
 import mdState from './md/state.md';
+import mdLoading from './md/loading.md';
 
 const column = [{
   title: '属性',
@@ -69,17 +70,23 @@ const data = [{
   defaultValue: 'false',
   id: '6',
 }, {
+  property: 'loading',
+  explain: 'Button loading状态',
+  type: 'Boolean',
+  defaultValue: 'false',
+  id: '7',
+}, {
   property: 'tag',
   explain: '默认值为Button最后以button标签形式生成，当tag="div"时由div标签生成',
   type: 'String',
   defaultValue: '-',
-  id: '7',
+  id: '8',
 }, {
   property: 'onClick',
   explain: 'click事件的handler',
   type: 'Function',
   defaultValue: '-',
-  id: '8',
+  id: '9',
 }];
 
 class Model extends React.Component {
@@ -118,6 +125,11 @@ class Model extends React.Component {
               demo={config.data.state.demo}
               description={config.data.state.description}
               code={mdState}
+            />
+            <Base
+              demo={config.data.loading.demo}
+              description={config.data.loading.description}
+              code={mdLoading}
             />
           </div>
         </div>

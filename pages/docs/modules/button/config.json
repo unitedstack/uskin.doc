@@ -103,6 +103,28 @@
         "hide": true,
         "content": "按钮具有默认状态、选中状态、禁止使用状态。"
       }
+    },
+    "loading": {
+      "demo":{
+        "data":[{
+          "type": "button",
+          "config":{
+            "value": "加载中",
+            "loading": true
+          }
+        },{
+          "type": "button",
+          "config":{
+            "value": "加载中且disabled",
+            "loading": true,
+            "disabled": true
+          }
+        }]
+      },
+      "description": {
+        "hide": true,
+        "content": "按钮具有默认状态、选中状态、禁止使用状态。"
+      }
     }
   }
 
