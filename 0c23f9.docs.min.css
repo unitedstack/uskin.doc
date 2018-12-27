@@ -1230,8 +1230,8 @@ select::-ms-expand {
 }
 @font-face {
   font-family: "icons";
-  src: url(./fonts/92ca9c34.icon.eot);
-  src: url(./fonts/92ca9c34.icon.eot?#iefix) format("embedded-opentype"), url(./fonts/2b762949.icon.woff) format("woff"), url(./fonts/4c6a0afb.icon.ttf) format("truetype"), url(./fonts/5efb6cd7.icon.svg#icons) format("svg");
+  src: url(//fonts/92ca9c34.icon.eot);
+  src: url(//fonts/92ca9c34.icon.eot?#iefix) format("embedded-opentype"), url(//fonts/2b762949.icon.woff) format("woff"), url(//fonts/4c6a0afb.icon.ttf) format("truetype"), url(//fonts/5efb6cd7.icon.svg#icons) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2227,7 +2227,7 @@ input[type="radio"],
 input[type="checkbox"],
 input[type="radio"][disabled],
 input[type="checkbox"][disabled] {
-  background: url(../img/1a5a0b07.uskin_input.png) no-repeat -20px 0;
+  background: url(/./img/1a5a0b07.uskin_input.png) no-repeat -20px 0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (min-device-pixel-ratio: 2) {
   select,
@@ -2235,7 +2235,7 @@ input[type="checkbox"][disabled] {
   input[type="checkbox"],
   input[type="radio"][disabled],
   input[type="checkbox"][disabled] {
-    background: url(../img/65f2124f.uskin_input@x2.png) no-repeat -20px 0;
+    background: url(/./img/65f2124f.uskin_input@x2.png) no-repeat -20px 0;
     background-size: 96px 90px;
   }
 }
