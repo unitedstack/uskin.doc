@@ -96,7 +96,7 @@ let webpackConfig = {
         loader: 'url-loader',
         options: {
           limit: 2000,
-          name: './img/[hash:8].[name].[ext]'
+          name: '/img/[hash:8].[name].[ext]'
         }
       }]
     }]
