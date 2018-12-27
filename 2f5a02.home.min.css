@@ -1,0 +1,212 @@
+html {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.site-navbar {
+  width: 100%;
+  height: 76px;
+  background-color: #1e2f3d;
+}
+.site-navbar .content {
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 960px;
+}
+.site-navbar .content img {
+  width: 120px;
+  height: 52px;
+}
+.site-home {
+  width: 100%;
+}
+.site-home .welcome-page {
+  height: 600px;
+  background-color: #1e2f3d;
+  position: relative;
+}
+.site-home .welcome-page .title {
+  margin: 0;
+  padding-top: 100px;
+  text-align: center;
+}
+.site-home .welcome-page .title .head-title {
+  color: #fff;
+  font-size: 48px;
+  margin-right: 12px;
+}
+.site-home .welcome-page .title .sub-title {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 48px;
+}
+.site-home .welcome-page .btn-area {
+  margin-top: 40px;
+  text-align: center;
+}
+.site-home .welcome-page .btn-area .button {
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+.site-home .welcome-page .btn-area .green-button {
+  border: 1px solid #2cbe49;
+  background-color: #2cbe49;
+  color: #fff;
+  margin-right: 30px;
+}
+.site-home .welcome-page .btn-area .green-button:hover {
+  background-color: #29b244;
+}
+.site-home .welcome-page .btn-area .white-button {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.site-home .welcome-page .btn-area .white-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.site-home .welcome-page .btn-area .white-button .icno-github {
+  position: relative;
+  top: 3px;
+  height: 1.4em;
+  margin-right: 6px;
+}
+.site-home .welcome-page .stuff-area {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -450px;
+  width: 900px;
+  height: 280px;
+}
+.site-home .welcome-page .stuff-area .stuff {
+  position: absolute;
+}
+.site-home .welcome-page .stuff-area .wp-computer {
+  width: 320px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -160px;
+}
+.site-home .welcome-page .stuff-area .wp-hand {
+  width: 230px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -115px;
+}
+.site-home .welcome-page .stuff-area .wp-coffee {
+  width: 70px;
+  top: 120px;
+  left: 60px;
+}
+.site-home .welcome-page .stuff-area .wp-pencil {
+  width: 60px;
+  bottom: 0;
+  left: 200px;
+}
+.site-home .welcome-page .stuff-area .wp-mouse {
+  width: 40px;
+  bottom: 20px;
+  right: 200px;
+}
+.site-home .welcome-page .stuff-area .wp-paper {
+  width: 60px;
+  top: 60px;
+  right: 120px;
+}
+.site-home .content-page {
+  width: 100%;
+}
+.site-home .content-page .content {
+  width: 100%;
+  height: 600px;
+}
+.site-home .content-page .inner {
+  width: 900px;
+  height: inherit;
+  margin: 0 auto;
+}
+.site-home .content-page .inner .img-area {
+  padding: 0 80px;
+  float: left;
+  width: 50%;
+  height: inherit;
+  box-sizing: border-box;
+}
+.site-home .content-page .inner .img-area img {
+  width: 240px;
+  height: 240px;
+  margin: 180px auto;
+}
+.site-home .content-page .inner .text-area {
+  padding: 220px 80px;
+  float: left;
+  width: 50%;
+  height: inherit;
+  box-sizing: border-box;
+}
+.site-home .content-page .inner .text-area p {
+  font-size: 24px;
+  color: #333333;
+  margin: 24px 0;
+}
+.site-home .content-page .inner .text-area span {
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.site-home .content-page .white-type {
+  background-color: #fff;
+}
+.site-home .content-page .gray-type {
+  background-color: #eef1f1;
+}
+.sit-bottom {
+  width: 100%;
+  height: 200px;
+  background-color: #1e2f3d;
+  color: #fff;
+  font-size: 14px;
+}
+.sit-bottom .github-p {
+  width: 100%;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  position: relative;
+  top: 15px;
+}
+.sit-bottom .github-p img {
+  width: 20px;
+  height: 19px;
+  margin-right: 5px;
+}
+.sit-bottom .github-links {
+  list-style: none;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+.sit-bottom .github-links li {
+  height: 20px;
+}
+.sit-bottom .license {
+  width: 100%;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  color: #999999;
+  margin-top: 20px;
+}
+

@@ -4271,8 +4271,7 @@ samp {
   margin: 0 auto;
 }
 #app .wrapper .navbar {
-  width: 100%;
-  height: 60px;
+  height: 0px;
   background-color: #1D2E3B;
 }
 #app .wrapper .content {
