@@ -14,9 +14,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div className="docs-com-navbar">
-        <h1 style={{ color: '#fff' }}>this is navbar</h1>
-      </div>
+      <br />
     );
   }
 }
